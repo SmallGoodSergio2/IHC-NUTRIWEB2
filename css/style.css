@@ -33,7 +33,8 @@ nav2 {
 
    background-color: #FFB68B;
    display:flex;
-
+   position:sticky;
+   top:0;
 }
 
 section {
