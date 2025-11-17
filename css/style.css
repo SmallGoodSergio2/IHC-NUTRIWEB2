@@ -1,0 +1,137 @@
+body {
+
+
+    margin: 0;
+}
+header {
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    justify-content: center;
+
+}
+
+.TituloPagina{
+
+
+    font-size: 48px;
+}
+
+
+nav {
+
+    background-color: #FEE7D1;
+    display:flex;
+}
+
+
+nav2 {
+
+
+
+   background-color: #FFB68B;
+   display:flex;
+
+}
+
+section {
+
+
+    background-color: #FFEACB;
+    display:flex;
+    margin:0;
+}
+
+footer {
+
+    background-color: #95674C;
+    display:flex;
+    margin:0;
+    height: 200px;
+    justify-content: center;
+}
+
+.ActividadReciente{
+
+
+    margin-left: 200px;
+    margin-right: 40px;
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.AdministracionTarea{
+
+
+
+    margin-left:800px;
+    margin-top:30px;
+    position:relative;
+}
+.ComidasRecomendadas{
+
+
+
+   margin-top:800px;
+   position:relative;
+   right:580px;
+
+}
+
+.InformacionComida{
+
+
+
+
+    margin-left:350px;
+    margin-right:80px;
+
+}
+
+
+
+
+.PlanificacionMeta{
+
+
+
+    margin-right:80px;
+}
+
+.Recomendaciones{
+
+
+    margin-right:80px;
+}
+
+.YendoMenu{
+
+    
+   width:150px;
+   height: 150px;
+   margin-right: 20px;
+
+}
+
+
+
+
+.NutriwebImagen{
+
+   width:150px;
+   height: 145px;
+
+}
+
+section {
+
+
+ background-color: #FFEACB;
+ display: flex;
+
+
+}
