@@ -2,6 +2,8 @@ body {
 
 
     margin: 0;
+    padding:0;
+    width:100%;
 }
 header {
 
@@ -37,13 +39,7 @@ nav2 {
    top:0;
 }
 
-section {
 
-
-    background-color: #FFEACB;
-    display:flex;
-    margin:0;
-}
 
 footer {
 
@@ -140,8 +136,8 @@ section {
 
 
  background-color: #FFEACB;
-
-
+ margin:0;
+ 
 }
 
 
@@ -186,12 +182,24 @@ section {
 
 .cuadro1{
 
-    position:relative;
-    margin-top: 60px;
-    right:900px;
-
-    width:500px;
-    height:100px;
-    border: 2px solid #333;
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
     overflow: auto;
+}
+
+
+.cuadro2{
+
+
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
+    overflow: auto;
+
+
 }
