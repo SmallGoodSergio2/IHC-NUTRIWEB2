@@ -1,64 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../../css/style5.css">
+  <meta charset="UTF-8">
+  <title>NutriWeb - Objetivo Cumplido</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<header>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="NutriWeb">
+    </div>
+    <div class="user-info">
+      <img src="usuario.png" alt="Usuario">
+      <span>Sergio Saavedra</span>
+      <div class="progress-bar">
+        <span>Progreso de meta alimentaria más reciente</span>
+        <div class="progress"><div class="progress-fill"></div></div>
+        <small>45% Completado</small>
+      </div>
+    </div>
+    <div class="notifications">🔔 Notificaciones</div>
+  </header>
 
-   <div class="TituloPagina">
+  <div class="container">
+    <div class="sidebar">
+      <a href="inicio.html">Buscar información de comidas</a>
+      <a href="planificar.html">Planificar metas</a>
+      <a href="#">Recomendaciones</a>
+      <a href="#">Atención al cliente</a>
+      <a href="#">Configuración</a>
+      <a href="#">Cerrar sesión</a>
+    </div>
 
-        <h2>NUTRIWEB</h2>
-
-
-   </div>
-</header>
-
-<nav>
-
-
-  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
-   
-  <div class = "Nombre">
-
-    
-    <h2>Sergio Saavedra</h2>
-
+    <div class="main-content" style="text-align:center;">
+      <h1>¡Felicidades!</h1>
+      <h2>Objetivo Cumplido</h2>
+      <img src="smiley.png" width="100" style="margin:30px 0;">
+      <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+        <button style="padding:10px 20px; border-radius:10px; border:none; background:#b35f2b; color:white;">Añadir Otro Objetivo</button>
+        <button style="padding:10px 20px; border-radius:10px; border:none; background:#b35f2b; color:white;">Volver al Menú</button>
+      </div>
+    </div>
   </div>
-
-</nav>
-
-
-<nav2>
-   
-   <h3 class ="InformacionComida">Informacion Comida</h3>
-   <h3 class ="PlanificacionMeta">Planificacion Meta Alimentaria</h3>
-   <h3 class ="Recomendaciones">Recomendaciones</h3>
-   <h3 class="Configuracion">Configuracion</h3>
-</nav2>
-
-
-<section>
-
-     <img class="CaritaSonrisa" src ="../../../assets/images/CaritaFeliz.png" alt="assets/images/NUTRIWEBLOGO.png">
-     <h1 class="MensajeMotivacion">FELICIDADES! Objetivo cumplido</h1>
-</section>
-
-
-
-<footer>
-
-<p>. </p>
-
-<h3 class ="TextoFooter">Si tiene alguna duda sobre la página no dude en contactarnos</h3>
-
-</footer>
-
-
-
 </body>
 </html>
