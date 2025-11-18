@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios Premium</title>
+
+<link rel="stylesheet" href="ServiciosPremium.css">
+
+</head>
+<body>
+
+<!-- 🌸 Pantalla 1: Servicios Premium -->
+<div id="screen1" class="screen active">
+    <h2 class="title">Servicios Premium</h2>
+
+    <div class="card">
+        Accede a características avanzadas para mejorar tu experiencia con la app.
+    </div>
+
+    <div class="card">
+        <strong>🍽️ Recetas Exclusivas</strong><br>
+        Descubre recetas únicas y nutritivas solo para usuarios premium.
+    </div>
+
+    <div class="card">
+        <strong>📊 Estadísticas Avanzadas</strong><br>
+        Analiza tu progreso con reportes detallados y gráficos avanzados.
+    </div>
+
+    <div class="card">
+        <strong>👩‍⚕️ Chats con Nutricionistas</strong><br>
+        Habla con especialistas para resolver dudas y mejorar tu alimentación.
+    </div>
+
+    <button class="btn" onclick="goToScreen(2)">Suscribirse</button>
+</div>
+
+<!-- 🌸 Pantalla 2: Métodos de Pago -->
+<div id="screen2" class="screen">
+    <h2 class="title">Servicios Premium – Pago</h2>
+
+    <div class="payment-option" onclick="selectPayment('yape', event)">📱 Yape</div>
+    <div class="payment-option" onclick="selectPayment('visa', event)">💳 Visa</div>
+    <div class="payment-option" onclick="selectPayment('master', event)">💳 Mastercard</div>
+
+    <div id="paymentFields"></div>
+
+    <button class="btn" onclick="pay()">Pagar</button>
+</div>
+
+<!-- 🌸 Notificación -->
+<div id="toast" class="toast">✔ Pago realizado con éxito</div>
+
+<script src="ServiciosPremium.js"></script>
+
+</body>
+</html>
