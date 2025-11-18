@@ -1,0 +1,232 @@
+body {
+
+
+    margin: 0;
+}
+header {
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    justify-content: center;
+
+}
+
+.TituloPagina{
+
+
+    font-size: 48px;
+}
+
+
+nav {
+
+    background-color: #FEE7D1;
+    display:flex;
+}
+
+
+nav2 {
+
+
+
+   background-color: #FFB68B;
+   display:flex;
+   position:sticky;
+   top:0;
+}
+
+section {
+
+
+    background-color: #FFEACB;
+    overflow:hidden;
+    margin:0;
+}
+
+footer {
+
+    background-color: #95674C;
+    display:flex;
+    margin:0;
+    height: 200px;
+    justify-content: center;
+}
+
+.CrearMeta{
+
+
+    margin-left: 100px;
+    margin-right: 40px;
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.AdministracionTarea{
+
+
+
+    margin-left:800px;
+    margin-top:30px;
+    position:relative;
+}
+
+
+.InformacionComida{
+
+
+
+
+    margin-left:350px;
+    margin-right:80px;
+
+}
+
+
+
+
+.PlanificacionMeta{
+
+
+
+    margin-right:80px;
+}
+
+.Recomendaciones{
+
+
+    margin-right:80px;
+}
+
+.YendoMenu{
+
+    
+   width:150px;
+   height: 150px;
+   margin-right: 20px;
+
+}
+
+
+
+
+.NutriwebImagen{
+
+   width:150px;
+   height: 145px;
+
+}
+
+sectionimage
+{
+   
+  margin:0;
+  display:flex;
+
+}
+
+section {
+
+
+ background-color: #FFEACB;
+
+
+}
+
+
+.informacionPortada{
+
+    width: 100%;
+    height:700px;
+    margin:0;
+
+} 
+
+.TitulosPlanificar{
+
+
+    display:flex;
+
+}
+
+.TitulosCrear{
+
+
+    margin-top:70px;    
+    justify-items: center;
+
+
+}
+
+
+.CuadroMeta{
+
+
+
+    justify-items: center;
+}
+
+
+.CuadroContenido{
+
+
+
+    justify-items: center;
+    background-color: #FFB68B;
+    height: 900px;
+    width: 600px;
+}
+
+
+.CuadroContenido{
+
+
+    margin-top: 60px;
+}
+.CaloriaTexto{
+   margin-top: 30px;
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
+
+.FechaTexto{
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
+
+
+.DescripcionTexto{
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
+
+.NombreTexto{
+
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+
+
+}
+
+.botonCrear{
+
+    justify-items: center;
+    width:120px;
+    height: 30px;
+    background-color: #95674C;
+    border-radius: 15%;
+}

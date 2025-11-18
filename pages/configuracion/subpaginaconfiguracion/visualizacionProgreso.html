@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/indexjava.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <link rel="stylesheet" href="../../../css/style4.css">
+    <script src="../../../javascript/indexjava.js" defer></script>
+    <script src="../../../javascript/grafico.js" defer></script>
 </head>
 <body>
     
@@ -22,7 +24,7 @@
 <nav>
 
 
-  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
+  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="../../../assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
    
   <div class = "Nombre">
 
@@ -60,9 +62,9 @@
 
 <section>
 
-       <h2 class="ActividadReciente">Actividad Reciente </h2> 
-       <h2 class = "AdministracionTarea">Administrar tareas</h2>
-       <h2 class ="ComidasRecomendadas">Comidas Recomendadas</h2>
+       <h1 class="VisualizacionProgreso">Visualizacion Progreso Grafico</h1>
+
+       <canvas id="miGrafico" width="400" height="200"></canvas>
 
 </section>
 

@@ -35,16 +35,9 @@ nav2 {
    display:flex;
    position:sticky;
    top:0;
-   z-index: 1000;
 }
 
-section {
 
-
-    background-color: #FFEACB;
-    overflow: hidden;
-    
-}
 
 footer {
 
@@ -55,10 +48,10 @@ footer {
     justify-content: center;
 }
 
-.ActividadReciente{
+.CrearMeta{
 
 
-    margin-left: 200px;
+    margin-left: 100px;
     margin-right: 40px;
     position:relative;
 
@@ -74,15 +67,7 @@ footer {
     margin-top:30px;
     position:relative;
 }
-.ComidasRecomendadas{
 
-
-
-   margin-top:800px;
-   position:relative;
-   right:580px;
-
-}
 
 .InformacionComida{
 
@@ -141,7 +126,7 @@ section {
 
 
  background-color: #FFEACB;
-
+ overflow: hidden;
 
 }
 
@@ -153,51 +138,58 @@ section {
     margin:0;
 
 } 
-.miniTitulos{
+
+.Espacio1{
 
 
-
-    display:flex;
-    gap:20px;
-}
-
-.clearfix{
-
-    clear:both;
-}
-.Alimentos{
-
-
-
-    margin-left: 200px;
-    margin-right: 600px;
-}
-
-.TituloRegistrar{
-
-
-    margin-left:10px;
-}
-.cuadros{
-
-
-    display:flex;
     
+    display:flex;
 }
 
-.cuadro1{
 
-    position:relative;
-    margin-top: 60px;
-    right:900px;
+.EspacioCuadros{
 
-    width:500px;
-    height:100px;
-    border: 2px solid #333;
+    display:flex;
+}
+
+.Cuadro1{
+
+
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
     overflow: auto;
 }
 
+.Cuadro2{
 
+
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
+    overflow: auto;
+}
+
+.EspacioPresupuesto{
+
+
+
+    display:flex;
+    justify-content: center;
+}
+
+.TextoPresupuesto{
+    margin-top:100px;
+    width: 300px;
+    height: 200px;
+    overflow:auto;
+    margin-right:100px;
+
+}
 .usuarioNombre{
 
 

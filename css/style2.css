@@ -2,6 +2,8 @@ body {
 
 
     margin: 0;
+    padding:0;
+    width:100%;
 }
 header {
 
@@ -35,16 +37,9 @@ nav2 {
    display:flex;
    position:sticky;
    top:0;
-   z-index: 1000;
 }
 
-section {
 
-
-    background-color: #FFEACB;
-    overflow: hidden;
-    
-}
 
 footer {
 
@@ -141,8 +136,8 @@ section {
 
 
  background-color: #FFEACB;
-
-
+ margin:0;
+ overflow: hidden;
 }
 
 
@@ -187,62 +182,123 @@ section {
 
 .cuadro1{
 
-    position:relative;
-    margin-top: 60px;
-    right:900px;
-
-    width:500px;
-    height:100px;
-    border: 2px solid #333;
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
     overflow: auto;
 }
 
 
-.usuarioNombre{
+.cuadro2{
 
 
-    margin-top:80px;
-    margin-left: 300px;
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
+    overflow: auto;
+
+
+}
+
+.Buscador{
+
+   justify-content: center;
+   display:flex;
 }
 
 
-.botonNotificacion{
+
+.Buscador input[type=text]{
+
+     width: 500px;
+     font-size: 24px;
+    
 
 
-   position: relative;
-
-   left:300px;
-   top:40px;
-}
-#panelNotificaciones {
-    position: absolute;
-    top: 100px; /* Ajusta según el alto de tu nav */
-    right: 20px;
-    width: 280px;
-    background: #47F4AC;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-    z-index: 999;
-    transition: 0.3s ease;
 }
 
-.panel-hidden {
-    opacity: 0;
-    pointer-events: none; /* No permite click cuando está oculto */
-    transform: translateY(-10px);
+
+.ImagenDescripcion{
+
+
+    display:flex;
 }
 
-.panel-visible {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
+
+.CuadroImagenes{
+
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
+    overflow: auto;
+
+
 }
-.botonNotificacion:hover {
-    background-color: #FFF4E4; /* color solicitado */
-    cursor: pointer;
-    transform: scale(1.03);
-    width: 150px;
-    height: 40px;
-    border-radius: 15%;
+
+.TituloRegistrarComida{
+
+
+
+    margin-top: 70px;
+    font-size: 64px;
 }
+
+.lista-alimentos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 150px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.info-alimento {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.alimento-detalle {
+  text-align: center;
+}
+
+.alimento-detalle img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+.alimento-detalle h1 {
+  margin-top: 10px;
+  font-size: 32px;
+}
+.registrar-btn {
+  margin: 20px auto;
+  display: block;
+  padding: 12px 20px;
+  background-color: #95674C;
+  border: none;
+
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
