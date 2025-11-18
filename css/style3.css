@@ -41,7 +41,7 @@ section {
 
 
     background-color: #FFEACB;
-    display:flex;
+    overflow:hidden;
     margin:0;
 }
 
@@ -144,3 +144,89 @@ section {
     margin:0;
 
 } 
+
+.TitulosPlanificar{
+
+
+    display:flex;
+
+}
+
+.TitulosCrear{
+
+
+    margin-top:70px;    
+    justify-items: center;
+
+
+}
+
+
+.CuadroMeta{
+
+
+
+    justify-items: center;
+}
+
+
+.CuadroContenido{
+
+
+
+    justify-items: center;
+    background-color: #FFB68B;
+    height: 900px;
+    width: 600px;
+}
+
+
+.CuadroContenido{
+
+
+    margin-top: 60px;
+}
+.CaloriaTexto{
+   margin-top: 30px;
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
+
+.FechaTexto{
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
+
+
+.DescripcionTexto{
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
+
+.NombreTexto{
+
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+
+
+}
+
+.botonCrear{
+
+    justify-items: center;
+    width:120px;
+    height: 30px;
+    background-color: #95674C;
+    border-radius: 15%;
+}
