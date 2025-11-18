@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordatorios</title>
+    <link rel="stylesheet" href="Recordatorios.css">
+</head>
+<body>
+
+    <!-- ▬▬▬ TOP BAR ▬▬▬ -->
+    <header class="top-bar">
+        <div class="logo-section">
+            <img src="logo.png" class="logo" alt="">
+            <div class="user-info">
+                <img src="usuario.png" class="user-photo" alt="">
+                <span class="user-name">Sergio Saavedra</span>
+            </div>
+        </div>
+
+        <div class="progress-title">Progreso de meta alimentaria más reciente</div>
+
+        <div class="notification-section">
+            <img src="icono_notif.png" class="icon">
+            <span>Notificaciones</span>
+        </div>
+    </header>
+
+    <!-- ▬▬▬ SIDEBAR ▬▬▬ -->
+    <aside class="sidebar">
+        <button class="menu-btn">☰</button>
+        <nav>
+            <a href="#">Buscar información de comidas</a>
+            <a href="#">Planificar metas</a>
+            <a href="#">Recordatorios</a>
+            <a href="#">Atención al cliente</a>
+            <a href="#">Configuración</a>
+            <a href="#">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <!-- ▬▬▬ CONTENIDO ▬▬▬ -->
+    <main class="content">
+        <h1>Recordatorios</h1>
+
+        <div class="reminder-list">
+
+            <div class="reminder-item">
+                <label class="switch">
+                    <input type="checkbox" id="rec1">
+                    <span class="slider"></span>
+                </label>
+                <p>Comer frutas en la mañana</p>
+            </div>
+
+            <div class="reminder-item">
+                <label class="switch">
+                    <input type="checkbox" id="rec2">
+                    <span class="slider"></span>
+                </label>
+                <p>Preparar almuerzo saludable</p>
+            </div>
+
+            <div class="reminder-item">
+                <label class="switch">
+                    <input type="checkbox" id="rec3">
+                    <span class="slider"></span>
+                </label>
+                <p>Preparar cena saludable</p>
+            </div>
+
+            <div class="reminder-item">
+                <label class="switch">
+                    <input type="checkbox" id="rec4">
+                    <span class="slider"></span>
+                </label>
+                <p>Verificar calorías de los alimentos</p>
+            </div>
+
+            <div class="reminder-item">
+                <label class="switch">
+                    <input type="checkbox" id="rec5">
+                    <span class="slider"></span>
+                </label>
+                <p>Verificar calorías del almuerzo</p>
+            </div>
+
+        </div>
+
+        <button id="btnGuardar" class="btn-save">Guardar</button>
+    </main>
+
+    <!-- ▬▬▬ MODAL ▬▬▬ -->
+    <div id="modalGuardado" class="modal-container hidden">
+        <div class="modal-box">
+            <h2>¡Guardado!</h2>
+            <p>Los recordatorios se han guardado correctamente.</p>
+            <button id="btnCerrarModal" class="btn-enviar">OK</button>
+        </div>
+    </div>
+
+    <script src="Recordatorios.js"></script>
+</body>
+</html>
