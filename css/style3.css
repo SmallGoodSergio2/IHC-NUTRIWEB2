@@ -41,7 +41,7 @@ section {
 
 
     background-color: #FFEACB;
-    display:flex;
+    overflow:hidden;
     margin:0;
 }
 
@@ -144,3 +144,63 @@ section {
     margin:0;
 
 } 
+
+.TitulosPlanificar{
+
+
+    display:flex;
+
+}
+
+.TitulosCrear{
+
+
+    margin-top:70px;    
+    justify-items: center;
+
+
+}
+
+
+.CuadroMeta{
+
+
+
+    justify-items: center;
+}
+
+
+.CuadroContenido{
+
+
+
+    justify-items: center;
+    background-color: #FFB68B;
+    height: 900px;
+    width: 600px;
+}
+
+.CaloriaTexto{
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
+
+.FechaTexto{
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
+
+
+.DescripcionTexto{
+
+   width: 300px;
+   height: 50px;
+   font-size: 24px;
+   margin-left: 150px;
+}
