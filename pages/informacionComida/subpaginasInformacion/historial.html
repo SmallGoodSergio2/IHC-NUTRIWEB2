@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial de alimentación</title>
+  <link rel="stylesheet" href="historial.css">
+</head>
+<body>
+  <header>
+    <div class="logo-perfil">
+      <img src="logo.png" alt="NutriWeb" class="logo">
+      <div class="perfil">
+        <img src="perfil.png" alt="Usuario" class="foto">
+        <div>
+          <p><strong>Sergio Saavedra</strong></p>
+          <p>45% Completado</p>
+        </div>
+      </div>
+    </div>
+    <div class="progreso">
+      <p>Progreso de meta alimentaria más reciente</p>
+      <div class="barra"><div class="relleno"></div></div>
+    </div>
+    <div class="notificaciones">
+      <span>🔔</span>
+      <p>Notificaciones</p>
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <aside>
+      <ul>
+        <li>Buscar información de comidas</li>
+        <li>Planificar metas</li>
+        <li>Recomendaciones</li>
+        <li>Atención al cliente</li>
+        <li>Configuración</li>
+        <li>Cerrar sesión</li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Historial de alimentación</h2>
+      <div class="filtro">
+        <label>Desde:</label>
+        <input type="date">
+        <label>Hasta:</label>
+        <input type="date">
+      </div>
+
+      <div class="comidas">
+        <div class="card">
+          <img src="omelette.png" alt="Omelette de verduras">
+          <p><strong>Omelette de verduras</strong></p>
+          <p>Calorías: 150 kcal<br>Proteínas: 6 g<br>Grasas: 4 g</p>
+        </div>
+
+        <div class="card">
+          <img src="pollo.png" alt="Pollo con ensalada">
+          <p><strong>Pollo a la plancha con ensalada y arroz integral</strong></p>
+          <p>Calorías: 350 kcal<br>Proteínas: 40 g<br>Grasas: 8 g</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
