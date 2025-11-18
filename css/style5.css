@@ -126,8 +126,7 @@ section {
 
 
  background-color: #FFEACB;
- overflow: hidden;
-
+ display:flex;
 }
 
 
@@ -207,4 +206,23 @@ section {
 
     width: 300px;
     margin-left:640px;
+}
+
+.SubNavegacion{
+
+  background-color: #F6D8BB;
+
+  
+  width:250px;
+  
+
+}
+
+.SubContenedor{
+
+    display:flex;
+
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 30px;
 }
