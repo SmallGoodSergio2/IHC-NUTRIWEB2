@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe1c4;
+}
+
+/* Header */
+.header {
+    background-color: #f5d5b8;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #6b3f24;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    color: #b54a2f;
+}
+
+.highlight-logo {
+    color: #a100ff;
+}
+
+.user-info h3 {
+    font-size: 15px;
+    color: #222;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-text {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 180px;
+    height: 15px;
+    background-color: #f8e0c4;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #8b5a2b;
+    border-radius: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    color: #4b2e1a;
+}
+
+.notif-text {
+    font-size: 13px;
+    color: #222;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    width: 230px;
+    height: calc(100% - 70px);
+    background-color: #ffe6c7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #3a1f0d;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #f1c9a0;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 230px;
+    padding: 40px;
+    text-align: center;
+    min-height: calc(100vh - 70px);
+}
+
+/* Página Receta Guardada */
+.receta-guardada {
+    background-color: #ffb787;
+}
+
+.page-title {
+    font-size: 36px;
+    color: #3a1f0d;
+    margin-bottom: 40px;
+}
+
+.emoji {
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.btn {
+    padding: 12px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #8b5a2b;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #8b5a2b;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+    .main-content {
+        margin-left: 180px;
+    }
+    .page-title {
+        font-size: 28px;
+    }
+}

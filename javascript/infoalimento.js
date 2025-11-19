@@ -17,13 +17,10 @@ let botonRegistrar = document.getElementById("registrarBtn");
 
 botonRegistrar.addEventListener("click", () => {
 
-    // Obtener historial actual
     let historial = JSON.parse(localStorage.getItem("HistorialAlimentos")) || [];
 
-    // Agregar el nuevo alimento al historial
     historial.push(alimento);
 
-    // Guardarlo en localStorage
     localStorage.setItem("HistorialAlimentos", JSON.stringify(historial));
 
     alert("Alimento registrado en el historial");

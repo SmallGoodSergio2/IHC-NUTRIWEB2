@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/style4.css">
+    <script src="../../javascript/recomendacionpagina.js" defer></script>
 </head>
 <body>
     
@@ -21,7 +22,7 @@
 <nav>
 
 
-  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="../assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
+  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="../../assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
    
   <div class = "Nombre">
 
@@ -35,13 +36,13 @@
 
 <nav2>
    
-   <h3 class ="InformacionComida">Informacion Comida</h3>
-   <h3 class ="PlanificacionMeta">Planificacion Meta Alimentaria</h3>
-   <h3 class ="Recomendaciones">Recomendaciones</h3>
-   <h3 class="Configuracion">Configuracion</h3>
+   <h3 id="btnInfoComida" class="InformacionComida">Informacion Comida</h3>
+   <h3 id="btnPlanMeta" class="PlanificacionMeta">Planificacion Meta Alimentaria</h3>
+   <h3 id="btnRecomendaciones" class="Recomendaciones">Recomendaciones</h3>
+   <h3 id="btnConfig" class="Configuracion">Configuracion</h3>
 </nav2>
 <sectionimage>
-   <img class ="informacionPortada" src ="../assets/images/Recomendaciones.jpeg" alt ="">
+   <img class ="informacionPortada" src ="../../assets/images/Recomendaciones.jpeg" alt ="">
 
 </sectionimage>
 
@@ -50,33 +51,24 @@
        <div class ="Espacio1">
 
                <h2 class="CrearMeta">Recetas Simples </h2> 
-               <h2 class = "AdministracionTarea">Recetas rápidas</h2>
        </div>
 
        <div class ="EspacioCuadros">
 
            <div class ="Cuadro1">
 
-                 
+                 <div id="btnReceta" class="botonReceta">
+
+                     <h2 class ="TextoBotonReceta">Haz click aquí!</h2>
+                 </div>
 
            </div>
 
 
-           <div class ="Cuadro2">
-
-
-
-
-           </div>
+ 
        </div>
 
 
-       <div class ="EspacioPresupuesto">
-
-           <h2 class ="TextoPresupuesto">¿Quiere encontrar recetas dependiendo de su presupuesto? ¡Haga click en el botón de al lado!</h2>
-           
-
-       </div>
 
 </section>
 
