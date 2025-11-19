@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fbbd9b;
+}
+
+header {
+  background-color: #f8e6c1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo { width: 80px; }
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.foto {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.progreso {
+  text-align: center;
+}
+
+.barra {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  width: 180px;
+  height: 10px;
+  margin: 5px auto;
+}
+
+.relleno {
+  background-color: #8b5e3c;
+  width: 45%;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.contenedor {
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  background-color: #f8e6c1;
+  padding: 20px;
+  height: calc(100vh - 90px);
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+main {
+  flex: 1;
+  padding: 30px;
+}
+
+.filtro input {
+  margin: 5px;
+}
+
+.comidas {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f8e6c1;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
