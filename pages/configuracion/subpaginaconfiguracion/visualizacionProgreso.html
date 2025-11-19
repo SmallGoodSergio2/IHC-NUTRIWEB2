@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../../css/style2.css">
-    <script src="../../../javascript/java.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <link rel="stylesheet" href="../../../css/style4.css">
+    <script src="../../../javascript/indexjava.js" defer></script>
+    <script src="../../../javascript/grafico.js" defer></script>
 </head>
 <body>
     
@@ -27,9 +29,24 @@
   <div class = "Nombre">
 
     
-    <h2>Sergio Saavedra</h2>
+    <h2 class ="usuarioNombre">Nombre de usuario: Sergio Saavedra</h2>
 
   </div>
+   
+
+  <div class ="Notificacion">
+
+
+        <h2 id ="botonNotificacion"class ="botonNotificacion">Notificaciones</h2>
+
+  </div>
+
+  <div id="panelNotificaciones" class="panel-hidden">
+    <h3>Notificaciones</h3>
+    <ul id="listaNotificaciones">
+        <li>No tienes nuevas notificaciones</li>
+    </ul>
+</div>
 
 </nav>
 
@@ -45,23 +62,9 @@
 
 <section>
 
-       <h1 class ="TituloRegistrarComida">REGISTRAR COMIDA</h1>
+       <h1 class="VisualizacionProgreso">Visualizacion Progreso Grafico</h1>
 
-
-       <div class ="Buscador">
-             
-          <input id="buscador" class="buscador" type="text" placeholder="Buscar">
-
-
-       </div>
-
-
-       <div id="listaAlimentos" class ="lista-Alimentos">
-
-
-       </div>
-
-
+       <canvas id="miGrafico" width="400" height="200"></canvas>
 
 </section>
 
