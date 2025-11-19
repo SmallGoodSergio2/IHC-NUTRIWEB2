@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriWeb - Recomendaciones de Recetas</title>
+    <link rel="stylesheet" href="recomendaciones.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+        <div class="logo-section">
+            <div class="logo">N</div>
+            <div class="user-info">
+                <h3>Sergio Saavedra</h3>
+            </div>
+        </div>
+        <div class="header-right">
+            <span class="progress-text">Progreso de meta alimentaria más reciente<br><strong>45% Completado</strong></span>
+            <svg class="notification-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="menu-item">Buscar información de comida</div>
+        <div class="menu-item">Planificar metas</div>
+        <div class="menu-item active">Recomendaciones</div>
+        <div class="menu-item">Atención al cliente</div>
+        <div class="menu-item">Configuración</div>
+        <div class="menu-item">Cerrar sesión</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 class="page-title">Recomendaciones de recetas</h1>
+        
+        <div class="recipe-categories">
+            <!-- Recetas Saludables -->
+            <div class="category-card" onclick="navigateToCategory('saludables')">
+                <h3>Recetas Saludables</h3>
+                <div class="category-image">
+                    <div class="placeholder-image">
+                        <span>🥗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recetas Económicas -->
+            <div class="category-card" onclick="navigateToCategory('economicas')">
+                <h3>Recetas Económicas</h3>
+                <div class="category-image">
+                    <div class="placeholder-image">
+                        <span>💰</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recetas Rápidas -->
+            <div class="category-card" onclick="navigateToCategory('rapidas')">
+                <h3>Recetas Rápidas</h3>
+                <div class="category-image">
+                    <div class="placeholder-image">
+                        <span>⚡</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recetas por Presupuesto -->
+            <div class="category-card" onclick="navigateToCategory('presupuesto')">
+                <h3>Recetas por<br>presupuesto</h3>
+                <div class="category-image">
+                    <div class="placeholder-image">
+                        <span>📊</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="recomendaciones.js"></script>
+</body>
+</html>

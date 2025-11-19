@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriWeb - Recetas Económicas</title>
+    <link rel="stylesheet" href="economicas.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+        <div class="logo-section">
+            <div class="logo">N</div>
+            <div class="user-info">
+                <h3>Sergio Saavedra</h3>
+            </div>
+        </div>
+        <div class="header-right">
+            <span class="progress-text">Progreso de meta alimentaria más reciente<br><strong>45% Completado</strong></span>
+            <svg class="notification-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="menu-item">Buscar información de comida</div>
+        <div class="menu-item">Planificar metas</div>
+        <div class="menu-item active">Recomendaciones</div>
+        <div class="menu-item">Atención al cliente</div>
+        <div class="menu-item">Configuración</div>
+        <div class="menu-item">Cerrar sesión</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 class="page-title">Recetas Económicas</h1>
+        
+        <div class="recipe-list">
+            <!-- Receta 1: Lentejas Guisadas -->
+            <div class="recipe-item" onclick="viewRecipeDetail('lentejas-guisadas')">
+                <div class="recipe-item-image">
+                    <div class="placeholder-image">
+                        <span>🍲</span>
+                    </div>
+                </div>
+                <div class="recipe-item-content">
+                    <h3>Lentejas Guisadas</h3>
+                    <p class="recipe-description">
+                        Esta receta de lentejas guisadas es nutritiva y económica. Perfecta para un almuerzo 
+                        completo y saludable que no afectará tu presupuesto. Las lentejas son ricas en proteínas, 
+                        fibra y minerales esenciales. Ideal para toda la familia.
+                    </p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 45 min</span>
+                        <span class="meta-item">👥 4 porciones</span>
+                        <span class="meta-item">💰 Económico</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Receta 2: Arroz con Pollo -->
+            <div class="recipe-item" onclick="viewRecipeDetail('arroz-pollo')">
+                <div class="recipe-item-image">
+                    <div class="placeholder-image">
+                        <span>🍗</span>
+                    </div>
+                </div>
+                <div class="recipe-item-content">
+                    <h3>Arroz con Pollo</h3>
+                    <p class="recipe-description">
+                        Un clásico económico y delicioso. Esta receta de arroz con pollo es perfecta para 
+                        alimentar a toda la familia sin gastar mucho. Incluye vegetales frescos y especias 
+                        naturales para un sabor excepcional.
+                    </p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 50 min</span>
+                        <span class="meta-item">👥 6 porciones</span>
+                        <span class="meta-item">💰 Económico</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Receta 3: Pasta con Atún -->
+            <div class="recipe-item" onclick="viewRecipeDetail('pasta-atun')">
+                <div class="recipe-item-image">
+                    <div class="placeholder-image">
+                        <span>🍝</span>
+                    </div>
+                </div>
+                <div class="recipe-item-content">
+                    <h3>Pasta con Atún</h3>
+                    <p class="recipe-description">
+                        Una opción rápida, económica y nutritiva. La pasta con atún es perfecta para esos días 
+                        ocupados donde necesitas algo delicioso en poco tiempo. Rica en proteínas y omega-3, 
+                        esta receta es un favorito de la familia.
+                    </p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 25 min</span>
+                        <span class="meta-item">👥 4 porciones</span>
+                        <span class="meta-item">💰 Muy económico</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Receta 4: Sopa de Verduras -->
+            <div class="recipe-item" onclick="viewRecipeDetail('sopa-verduras')">
+                <div class="recipe-item-image">
+                    <div class="placeholder-image">
+                        <span>🥣</span>
+                    </div>
+                </div>
+                <div class="recipe-item-content">
+                    <h3>Sopa de Verduras</h3>
+                    <p class="recipe-description">
+                        Una sopa casera llena de nutrientes y sabor. Perfecta para aprovechar las verduras 
+                        de temporada y crear un plato reconfortante y económico. Ideal para días fríos o 
+                        cuando necesitas algo ligero pero satisfactorio.
+                    </p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 35 min</span>
+                        <span class="meta-item">👥 5 porciones</span>
+                        <span class="meta-item">💰 Económico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón Volver -->
+        <div class="back-button-container">
+            <button class="btn btn-back" onclick="goBack()">
+                ← Volver a Recomendaciones
+            </button>
+        </div>
+    </div>
+
+    <script src="economicas.js"></script>
+</body>
+</html>
