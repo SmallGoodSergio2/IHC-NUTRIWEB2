@@ -71,7 +71,7 @@ footer {
 
 
     margin-left:800px;
-    margin-top:30px;
+    
     position:relative;
 }
 .ComidasRecomendadas{
@@ -245,4 +245,32 @@ section {
     width: 150px;
     height: 40px;
     border-radius: 15%;
+}
+
+nav2 h3 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+    cursor: pointer;
+}
+
+nav2 h3:hover {
+    background-color: #FFEBD4; 
+    transform: scale(1.05);   
+}
+
+.CuadroActividad{
+
+
+
+
+    margin-left: 150px;
+    background-color: #F3D3B4;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    
 }

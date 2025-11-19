@@ -238,3 +238,53 @@ section {
     height: 40px;
     border-radius: 15%;
 }
+
+nav2 h3 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+    cursor: pointer;
+}
+
+nav2 h3:hover {
+    background-color: #FFEBD4; 
+    transform: scale(1.05);   
+}
+
+.Cuadro1 {
+    width: 300px;
+    height: 180px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.botonReceta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextoBotonReceta {
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: #FFF4E4;
+
+    /* transición suave */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.TextoBotonReceta:hover {
+    background-color: #FFE0C0;
+    transform: scale(1.07);
+}
