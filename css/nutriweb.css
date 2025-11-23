@@ -1,0 +1,211 @@
+:root{
+  --bg:#f7b18a;          /* peach content */
+  --top:#e3c7a9;         /* header */
+  --ink:#1c130e;
+  --divider:#2b1b13;
+  --sidebar:#f6ead7;
+  --sidebar-chip:#f0e2cf;
+  --accent:#7d5846;      /* buttons & progress fill */
+  --accent-2:#8d6a57;
+  --line:#e8d7c8;
+}
+
+*{ box-sizing:border-box }
+html,body{ height:100% }
+body {
+  background: linear-gradient(180deg, #FFF7F0 0%, #FFE3D3 35%, #FFB68B 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+
+  /* Textura gourmet */
+  position: relative;
+}
+
+/* Capa de textura ultra-sutil */
+body {
+  background: linear-gradient(180deg, #FFF4EB 0%, #FFE1D0 40%, #FFB68B 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.container{ width:min(1200px,92%); margin:0 auto }
+
+/* ===== Arriba ===== */
+.topbar{ background:var(--top); padding:12px 0; border-bottom:1px solid #c8ab8f }
+.topbar__row{ display:grid; grid-template-columns:160px 260px 1fr 220px; gap:16px; align-items:center }
+.logo{ height:52px; object-fit:contain }
+
+.profile{ display:flex; align-items:center; gap:12px }
+.avatar{ width:60px; height:60px; border-radius:50%; object-fit:cover; background:#ddd }
+.name{ font-weight:700 }
+
+.notif{ display:flex; align-items:center; gap:10px; text-decoration:none; color:inherit; justify-self:end }
+.notif__icon{ width:48px; height:48px; object-fit:contain; background:#eee; border-radius:10px }
+
+.progress{ display:grid; gap:6px; justify-items:center }
+.progress__title{ font-weight:700 }
+.progress__bar{ width:min(520px,100%); height:36px; padding:6px; background:#f2e0c8; border-radius:18px; box-shadow: inset 0 1px 0 rgba(0,0,0,.08) }
+.progress__fill{ height:100%; background:var(--accent); border-radius:14px }
+.progress__percent{ font-weight:700; text-align:center }
+
+/* Separador */
+.divider{ height:14px; background:var(--divider) }
+
+/* ===== disposicion ===== */
+.layout{ display:grid; grid-template-columns:300px 1fr; gap:24px; padding:24px 0 36px }
+.sidebar{ background:var(--sidebar); border-radius:18px; padding:18px }
+.hamburger{ width:42px; height:42px; background:var(--sidebar-chip); border:0; border-radius:10px; display:flex; flex-direction:column; gap:5px; align-items:center; justify-content:center; margin:6px 0 16px; cursor:pointer }
+.hamburger span{ width:24px; height:3px; background:#2b1b13; border-radius:2px }
+
+.menu{ display:flex; flex-direction:column; gap:12px }
+.menu__item{ display:block; padding:18px 14px; background:var(--sidebar-chip); border-radius:14px; text-decoration:none; color:var(--ink); font-weight:700; transition:filter .2s ease }
+.menu__item:hover{ filter:brightness(.97) }
+.menu__item--last{ margin-top:auto }
+
+/* ===== Contenido base ===== */
+.content{ background:var(--bg); border-radius:18px; padding:32px 24px }
+.title{ font:700 48px/1.2 "Poppins", sans-serif; margin:6px 0 24px }
+
+/* ===== Listado de alimentos ===== */
+.items-grid{
+  display:grid;
+  grid-template-columns:1fr;         /* título centrado y tarjetas abajo */
+  gap:28px;
+}
+.food-list{
+  display:grid;
+  grid-template-columns: 1fr;        /* una columna centrada (se ve como tu wireframe) */
+  gap:46px;
+  justify-items:center;
+}
+.food{
+  text-align:center;
+}
+.food__name{
+  font:700 20px/1.2 "Poppins", sans-serif; margin:0 0 10px;
+}
+.food__img{
+  width:min(480px, 80vw);
+  height:auto;
+  object-fit:cover;
+  border-radius:10px;
+  box-shadow:0 2px 0 rgba(0,0,0,.05);
+}
+.link-muted{
+  display:block; margin-top:10px; color:#4b3b33; opacity:.8; text-decoration:none;
+}
+.link-muted:hover{ opacity:1; text-decoration:underline }
+
+/* ===== Página de detalle ===== */
+.detail{
+  max-width:780px; margin:0 auto; text-align:center;
+}
+.detail__name{ font:700 22px/1.2 "Poppins", sans-serif; margin:0 0 14px }
+.detail__img{
+  width:min(520px, 90%);
+  height:auto;
+  object-fit:cover;
+  border-radius:10px;
+  box-shadow:0 2px 0 rgba(0,0,0,.06);
+  margin-bottom:16px;
+}
+.detail__desc{
+  background:#f9d1b6; border:1px solid #e8c3ab;
+  border-radius:14px; padding:16px 18px; text-align:justify;
+  margin:0 auto 14px; max-width:720px;
+}
+.nutri{
+  background:#fae3d2; border:1px solid #ebd3c2; border-radius:12px;
+  padding:14px 18px; max-width:520px; margin:0 auto; text-align:left;
+}
+.nutri h4{ margin:0 0 8px; font:700 18px/1.2 "Poppins", sans-serif }
+.nutri ul{ margin:0; padding-left:18px }
+.back{
+  display:inline-flex; align-items:center; justify-content:center;
+  margin-top:18px; height:44px; padding:0 18px; border-radius:10px;
+  background:var(--accent-2); color:#fff; text-decoration:none; font-weight:600;
+}
+.back:hover{ filter:brightness(.96) }
+
+/* ===== Responsive ===== */
+@media (max-width:1024px){
+  .topbar__row{ grid-template-columns:1fr; justify-items:center; text-align:center }
+  .layout{ grid-template-columns:1fr }
+  .sidebar{ order:2 }
+  .content{ order:1 }
+}
+/* ===== Objetivo cumplido - ajustes ===== */
+.success{
+  text-align:center;              /* centra títulos y elementos inline */
+}
+
+.title--xl{
+  font:700 64px/1.15 "Poppins", sans-serif;
+  margin:10px 0 24px;
+}
+
+.success .emoji{
+  width:260px;                    /* tamaño similar al prototipo */
+  height:260px;
+  object-fit:contain;
+  display:block;
+  margin:16px auto 28px;          /* auto = centrado horizontal */
+}
+
+/* Botonera centrada y con separación */
+.actions{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:80px;                       /* distancia entre botones */
+  margin:8px 0 24px;
+}
+
+/* Botones grandes (cápsulas) */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:56px;
+  padding:0 28px;
+  border-radius:12px;
+  border:0;
+  cursor:pointer;
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;           /* quitar subrayado */
+  box-shadow:0 1px 0 rgba(0,0,0,.08);
+  transition:filter .2s ease;
+}
+
+.btn-lg{
+  width:270px;                    /* ancho como en el mockup */
+  border-radius:10px;             /* esquinas como tu diseño */
+}
+
+.btn-primary{  background:var(--accent);   }
+.btn-secondary{background:var(--accent-2); }
+.btn:hover{     filter:brightness(.96);     }
+
+@media (max-width: 600px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Comidas marcadas como favoritas */
+.food--favorite {
+  border: 2px solid #ffb703;
+  box-shadow: 0 0 0 2px rgba(255, 183, 3, 0.3);
+}
+
+
