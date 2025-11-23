@@ -1,82 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/indexjava.js" defer></script>
+    <title>NUTRIWEB</title>
+
+   <!-- CSS -->
+<link rel="stylesheet" href="css/style_marco.css">
 </head>
 <body>
-    
-<header>
 
-   <div class="TituloPagina">
+    <!-- ===== HEADER ===== -->
+    <header>
 
-        <h2>NUTRIWEB</h2>
+        <div class="usuario">
+            <h2>Sergio Saavedra</h2>
+        </div>
 
+        <div class="estatus">
+           <h3>Estatus: Estudiante Universitario</h3>
+        </div>
 
-   </div>
-</header>
+        <div class="MiPerfil">
+           <a class="Perfil" href="pages/registrarcomida.html">Configuración</a> 
+        </div>
 
-<nav>
+        <div class="recomendaciones">
+           <a class="recomendacion" href="pages/recomendaciones.html">Recomendaciones</a>
+        </div>
 
+        <div class="PlanificacionMetaAlimentaria">
+            <a class="linkMetaAlimentaria" href="pages/planificarMeta/planificar_metas.html">
+              Planificación de Meta Alimentaria
+            </a>
+        </div>
 
-  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
-   
-  <div class = "Nombre">
+        <div class="InformacionComida">
+            <a class="linkinfocomida" href="pages/informacionComida/descripcion_comida.html">
+              Información comida
+            </a>
+        </div>
 
-    
-    <h2 class ="usuarioNombre">Nombre de usuario: Sergio Saavedra</h2>
-
-  </div>
-   
-
-  <div class ="Notificacion">
-
-
-        <h2 id ="botonNotificacion"class ="botonNotificacion">Notificaciones</h2>
-
-  </div>
-
-  <div id="panelNotificaciones" class="panel-hidden">
-    <h3>Notificaciones</h3>
-    <ul id="listaNotificaciones">
-        <li>No tienes nuevas notificaciones</li>
-    </ul>
-</div>
-
-</nav>
+    </header>
 
 
-<nav2>
-   
-   <h3 class ="InformacionComida">Informacion Comida</h3>
-   <h3 class ="PlanificacionMeta">Planificacion Meta Alimentaria</h3>
-   <h3 class ="Recomendaciones">Recomendaciones</h3>
-   <h3 class="Configuracion">Configuracion</h3>
-</nav2>
+    <!-- ===== SECCIÓN CENTRAL (vacía por ahora) ===== -->
+    <section>
+    </section>
 
 
-<section>
+    <!-- ===== FOOTER ===== -->
+    <footer>  
+        <div class="ParteAbajo">
+            <a class="Contactanos" href="pages/atencion/atencion.html">Atención al cliente</a>
+        </div>
+    </footer>
 
-       <h2 class="ActividadReciente">Actividad Reciente </h2> 
-       <h2 class = "AdministracionTarea">Administrar tareas</h2>
-       <h2 class ="ComidasRecomendadas">Comidas Recomendadas</h2>
-
-</section>
-
-
-
-<footer>
-
-<p>. </p>
-
-<h3 class ="TextoFooter">Si tiene alguna duda sobre la página no dude en contactarnos</h3>
-
-</footer>
-
-
+    <!-- JS CORRECTO -->
+    <script src="javascript/app.js"></script>
 
 </body>
 </html>
