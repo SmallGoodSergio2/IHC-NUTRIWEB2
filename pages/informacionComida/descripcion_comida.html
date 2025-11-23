@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriWeb - Descripción de comida</title>
+
+  <!-- Aquí va el CSS correcto -->
+  <link rel="stylesheet" href="../../css/nutriweb.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <div class="container topbar__row">
+      <!-- Logo -->
+      <img class="logo" src="../../assets/images/logo.png" alt="NutriWeb">
+
+      <!-- Perfil -->
+      <div class="profile">
+        <img class="avatar" src="../../assets/images/avatar.jpg" alt="Sergio Saavedra">
+        <div class="name">Sergio Saavedra</div>
+      </div>
+
+      <!-- Progreso -->
+      <div class="progress">
+        <div class="progress__title">Progreso de meta alimentaria más reciente</div>
+        <div class="progress__bar">
+          <div class="progress__fill" style="width:45%"></div>
+        </div>
+        <div class="progress__percent">45% Completado</div>
+      </div>
+
+      <!-- Notificaciones -->
+      <a class="notif" href="#">
+        <img class="notif__icon" src="../../assets/images/notif.png" alt="Notificaciones">
+        <span>Notificaciones</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- ===== LAYOUT PRINCIPAL (sidebar + contenido) ===== -->
+  <main class="container layout">
+
+    <!-- Sidebar / menú izquierdo -->
+    <aside class="sidebar">
+      <button class="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu">
+        <a href="descripcion_comida.html" class="menu__item">Buscar información de comidas</a>
+        <a href="../planificarMeta/planificar_metas.html" class="menu__item">Planificar metas</a>
+        <a href="#" class="menu__item">Recomendaciones</a>
+        <a href="../atencion/atencion.html" class="menu__item">Atención al cliente</a>
+        <a href="#" class="menu__item">Configuración</a>
+        <a href="../../index.html" class="menu__item menu__item--last">Volver al inicio</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <section class="content">
+      <h1 class="title">Descripción de comida</h1>
+
+      <div class="items-grid">
+        <div class="food-list">
+
+          <!-- Tarjeta: Manzana roja -->
+          <article class="food">
+            <h2 class="food__name">Manzana Roja</h2>
+            <img
+              class="food__img"
+              src="../../assets/images/manzana2.jpg"
+              alt="Manzana roja">
+            <a class="link-muted" href="detalle_manzana.html">Ver detalles de comida</a>
+          </article>
+
+          <!-- Tarjeta: Huevo -->
+          <article class="food">
+            <h2 class="food__name">Huevo</h2>
+            <img
+              class="food__img"
+              src="../../assets/images/huevo.jpg"
+              alt="Huevo cocido">
+            <a class="link-muted" href="detalle_huevo.html">Ver detalles de comida</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../javascript/app.js"></script>
+</body>
+</html>

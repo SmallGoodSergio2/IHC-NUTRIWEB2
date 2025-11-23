@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriWeb - Crear meta alimentaria</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="../../css/style_marco.css">
+  <!-- CSS específico de Planificar Metas -->
+  <link rel="stylesheet" href="../../css/planificar_metas.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <div class="container topbar__row">
+      <img class="logo" src="../../assets/images/logo.png" alt="NutriWeb">
+
+      <div class="profile">
+        <img class="avatar" src="../../assets/images/avatar.jpg" alt="Sergio Saavedra">
+        <div class="name">Sergio Saavedra</div>
+      </div>
+
+      <div class="progress">
+        <div class="progress__title">Progreso de meta alimentaria más reciente</div>
+        <div class="progress__bar">
+          <div class="progress__fill" style="width:45%"></div>
+        </div>
+        <div class="progress__percent">45% Completado</div>
+      </div>
+
+      <a class="notif" href="#" id="notifToggle">
+  <img class="notif__icon" src="../../assets/images/notif.png" alt="Notificaciones">
+  <span>Notificaciones</span>
+</a>
+
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <main class="container">
+    <section class="content">
+      <div class="title-box">
+        <h1 class="title">Crear meta alimentaria</h1>
+        <p class="subtitle">
+          Define un objetivo claro para mejorar tus hábitos de alimentación.
+        </p>
+      </div>
+
+      <form id="goalForm" class="goal-form">
+        <div class="goal-form__group">
+          <label for="tipoMeta">Tipo de meta</label>
+          <select id="tipoMeta" name="tipoMeta" required>
+            <option value="">Selecciona una opción</option>
+            <option value="bajar">Bajar de peso</option>
+            <option value="subir">Subir de peso</option>
+            <option value="mantener">Mantener peso saludable</option>
+            <option value="musculo">Aumentar masa muscular</option>
+          </select>
+        </div>
+
+        <div class="goal-form__row">
+          <div class="goal-form__group">
+            <label for="pesoActual">Peso actual (kg)</label>
+            <input type="number" id="pesoActual" name="pesoActual" min="30" max="250" required>
+          </div>
+
+          <div class="goal-form__group">
+            <label for="pesoObjetivo">Peso objetivo (kg)</label>
+            <input type="number" id="pesoObjetivo" name="pesoObjetivo" min="30" max="250" required>
+          </div>
+        </div>
+
+        <div class="goal-form__group">
+          <label for="duracion">Duración estimada</label>
+          <select id="duracion" name="duracion" required>
+            <option value="">Selecciona una opción</option>
+            <option value="4">4 semanas</option>
+            <option value="8">8 semanas</option>
+            <option value="12">12 semanas</option>
+          </select>
+        </div>
+
+        <div class="goal-form__group">
+          <label for="fechaInicio">Fecha de inicio</label>
+          <input type="date" id="fechaInicio" name="fechaInicio" required>
+        </div>
+
+        <div class="goal-form__group">
+          <label for="comentarios">Comentarios o notas</label>
+          <textarea id="comentarios" name="comentarios" rows="3"
+            placeholder="Ejemplo: Reducir bebidas azucaradas, aumentar consumo de frutas y verduras."></textarea>
+        </div>
+
+        <button type="submit" class="btn-guardar-meta">Guardar meta</button>
+        <div class="goal-form__hint">
+          Podrás revisar tus metas en la sección “Metas Alimentarias”.
+        </div>
+      </form>
+
+      <a href="planificar_metas.html" class="back">
+        ← Volver a Planificar metas
+      </a>
+    </section>
+  </main>
+<script>
+document.getElementById("goalForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const meta = {
+        id: Date.now(),
+        tipoMeta: document.getElementById("tipoMeta").value,
+        pesoActual: document.getElementById("pesoActual").value,
+        pesoObjetivo: document.getElementById("pesoObjetivo").value,
+        duracion: document.getElementById("duracion").value,
+        fechaInicio: document.getElementById("fechaInicio").value,
+        comentarios: document.getElementById("comentarios").value,
+        progreso: 0,
+        estado: "progreso"   // o "activas", como prefieras manejarlo
+    };
+
+    const metas = JSON.parse(localStorage.getItem("metas")) || [];
+    metas.push(meta);
+    localStorage.setItem("metas", JSON.stringify(metas));
+
+    // Mostrar toast y luego redirigir
+    showToast("Meta guardada con éxito 🎉");
+});
+
+function showToast(mensaje) {
+    const toast = document.getElementById("toast");
+    if (!toast) return;
+
+    toast.textContent = mensaje;
+    toast.classList.add("toast--show");
+
+    // Espera 2.2s, oculta el toast y redirige
+    setTimeout(() => {
+        toast.classList.remove("toast--show");
+        window.location.href = "metas_alimentarias.html";
+    }, 2200);
+}
+</script>
+<!-- Panel de historial de notificaciones (opcional, si quieres también aquí) -->
+  <div id="notifPanel" class="notif-panel">
+    <div class="notif-panel__header">
+      <span>Notificaciones</span>
+      <button id="notifClear" class="notif-panel__clear">Borrar todo</button>
+    </div>
+    <div class="notif-panel__list" id="notifList"></div>
+  </div>
+
+<!-- TOAST -->
+<div id="toast" class="toast">Meta guardada con éxito 🎉</div>
+<script src="../../javascript/app.js"></script>
+
+</body>
+</html>
+

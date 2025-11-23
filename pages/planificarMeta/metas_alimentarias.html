@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriWeb - Metas Alimentarias</title>
+
+  <!-- Mismos estilos que Planificar metas -->
+  <link rel="stylesheet" href="../../css/style_marco.css">
+  <link rel="stylesheet" href="../../css/planificar_metas.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-metas"> 
+
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <div class="container topbar__row">
+      <img class="logo" src="../../assets/images/logo.png" alt="NutriWeb">
+
+      <div class="profile">
+        <img class="avatar" src="../../assets/images/avatar.jpg" alt="Sergio Saavedra">
+        <div class="name">Sergio Saavedra</div>
+      </div>
+
+      <div class="progress">
+        <div class="progress__title">Progreso de meta alimentaria más reciente</div>
+        <div class="progress__bar">
+          <div class="progress__fill" style="width:45%"></div>
+        </div>
+        <div class="progress__percent">45% Completado</div>
+      </div>
+
+      <a class="notif" href="#" id="notifToggle">
+  <img class="notif__icon" src="../../assets/images/notif.png" alt="Notificaciones">
+  <span>Notificaciones</span>
+</a>
+
+
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- ===== CONTENIDO ===== -->
+  <main class="container">
+    <section class="content">
+      <!-- Título de la página -->
+      <div class="title-box">
+        <h1 class="title">Metas Alimentarias</h1>
+        <p class="subtitle">Aquí puedes ver el progreso de todas tus metas.</p>
+      </div>
+
+      <!-- Filtros de estado -->
+      <div class="goal-filters">
+        <button class="goal-filter goal-filter--active" data-filter="activas">Activas</button>
+        <button class="goal-filter" data-filter="progreso">En progreso</button>
+        <button class="goal-filter" data-filter="completadas">Completadas</button>
+        <button class="goal-filter" data-filter="canceladas">Canceladas</button>
+      </div>
+
+      <!-- Lista de metas (solo JS) -->
+      <div class="goals-list"></div>
+
+      <!-- Mensaje cuando no haya metas para un filtro -->
+      <p class="goals-empty" style="display:none;">
+        No tienes metas en este estado por ahora.
+      </p>
+
+      <!-- Botón para crear una nueva meta -->
+      <div class="goal-new-wrapper">
+        <a href="crear_meta.html" class="btn-goal btn-goal--primary">+ Crear nueva meta</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS que pinta las metas desde localStorage -->
+  <script>
+    function cargarMetas() {
+      const metas = JSON.parse(localStorage.getItem("metas")) || [];
+      const lista = document.querySelector(".goals-list");
+      const empty = document.querySelector(".goals-empty");
+      lista.innerHTML = ""; // limpiar
+
+      if (metas.length === 0) {
+        if (empty) empty.style.display = "block";
+        return;
+      } else {
+        if (empty) empty.style.display = "none";
+      }
+
+      metas.forEach(meta => {
+        let porcentaje = calcularProgreso(meta);
+
+        const card = document.createElement("article");
+        card.className = "goal-card";
+        card.setAttribute("data-status", meta.estado || "activas");
+
+        card.innerHTML = `
+          <h2 class="goal-title">${formatearTitulo(meta.tipoMeta)}</h2>
+
+          <p><strong>Duración:</strong> ${meta.duracion} semanas</p>
+          <p><strong>Peso actual:</strong> ${meta.pesoActual} kg</p>
+          <p><strong>Peso objetivo:</strong> ${meta.pesoObjetivo} kg</p>
+
+          <div class="progress__bar progress__bar--small">
+            <div class="progress__fill" style="width:${porcentaje}%"></div>
+          </div>
+
+          <p class="goal-progress-label">${porcentaje}% Completado</p>
+
+          <div class="goal-actions">
+            <button onclick="editarMeta(${meta.id})" class="btn-goal btn-goal--secondary">Editar</button>
+            <button onclick="marcarCompletada(${meta.id})" class="btn-goal btn-goal--primary">Marcar completada</button>
+            <button onclick="eliminarMeta(${meta.id})" class="btn-goal btn-goal--danger">Eliminar</button>
+          </div>
+        `;
+
+        lista.appendChild(card);
+      });
+    }
+
+    function formatearTitulo(tipo) {
+      if (tipo === "bajar") return "Bajar de peso";
+      if (tipo === "subir") return "Subir de peso";
+      if (tipo === "mantener") return "Mantener peso saludable";
+      if (tipo === "musculo") return "Aumentar masa muscular";
+      return tipo;
+    }
+
+    function calcularProgreso(meta) {
+      const actual = Number(meta.pesoActual);
+      const objetivo = Number(meta.pesoObjetivo);
+
+      if (!actual || !objetivo || actual === objetivo) return 100;
+
+      // por ahora simulación simple
+      let difTotal = Math.abs(actual - objetivo);
+      let avance = difTotal * 0.45;
+      let porcentaje = Math.min(100, Math.floor((avance / difTotal) * 100));
+      return porcentaje;
+    }
+
+    function marcarCompletada(id) {
+      const metas = JSON.parse(localStorage.getItem("metas")) || [];
+      metas.forEach(m => {
+        if (m.id === id) {
+          m.estado = "completadas";
+          m.progreso = 100;
+        }
+      });
+      localStorage.setItem("metas", JSON.stringify(metas));
+      cargarMetas();
+    }
+
+    function eliminarMeta(id) {
+      const metas = JSON.parse(localStorage.getItem("metas")) || [];
+      const nuevas = metas.filter(m => m.id !== id);
+      localStorage.setItem("metas", JSON.stringify(nuevas));
+      cargarMetas();
+    }
+
+    function editarMeta(id) {
+      alert("Función de edición pendiente 😅");
+    }
+
+    cargarMetas();
+  </script>
+
+  <!-- Panel de historial de notificaciones -->
+  <div id="notifPanel" class="notif-panel">
+    <div class="notif-panel__header">
+      <span>Notificaciones</span>
+      <button id="notifClear" class="notif-panel__clear">Borrar todo</button>
+    </div>
+    <div class="notif-panel__list" id="notifList">
+      <!-- Aquí se cargan las notificaciones con JS -->
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script src="../../javascript/app.js"></script>
+</body>
+</html>
+
