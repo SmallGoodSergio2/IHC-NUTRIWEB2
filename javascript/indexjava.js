@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("btnPlanMeta").addEventListener("click", () => {
-        window.location.href = "../../../pages/planificarMeta/subpaginasplanificar/crearMetas.html";
+        window.location.href = "pages/planificarMeta/subpaginasplanificar/crearMetas.html";
     });
 
     document.getElementById("btnRecomendaciones").addEventListener("click", () => {
