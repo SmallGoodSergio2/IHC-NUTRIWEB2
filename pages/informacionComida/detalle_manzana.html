@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de Manzana Roja</title>
+
+  <!-- CSS correcto -->
+  <link rel="stylesheet" href="../../css/nutriweb.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="container topbar__row">
+
+      <img class="logo" src="../../assets/images/logo.png">
+
+      <div class="profile">
+        <img class="avatar" src="../../assets/images/avatar.jpg">
+        <div class="name">Sergio Saavedra</div>
+      </div>
+
+      <div class="progress">
+        <div class="progress__title">Progreso de meta alimentaria más reciente</div>
+        <div class="progress__bar">
+          <div class="progress__fill" style="width:45%"></div>
+        </div>
+        <div class="progress__percent">45% Completado</div>
+      </div>
+
+      <a class="notif" href="#">
+        <img class="notif__icon" src="../../assets/images/notif.png">
+        <span>Notificaciones</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- LAYOUT -->
+  <main class="container layout">
+
+    <!-- Menú lateral -->
+    <aside class="sidebar">
+      <button class="hamburger"><span></span><span></span><span></span></button>
+      <nav class="menu">
+        <a href="descripcion_comida.html" class="menu__item">← Volver a la lista</a>
+      </nav>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <section class="content">
+      <div class="detail">
+        <img src="../../assets/images/manzana2.jpg" class="detail__img">
+
+        <h1 class="detail__name">Manzana Roja</h1>
+
+        <p class="detail__desc">
+          La manzana roja es una fruta popular y versátil, distinguida por su piel brillante y pulpa jugosa.
+          Es una excelente fuente de <b>vitamina C</b>, antioxidantes (como la quercetina) y fibra dietética.
+        </p>
+
+        <h2 class="detail__subtitle">Información nutricional (por 100g)</h2>
+
+        <ul class="detail__list">
+          <li><b>Calorías:</b> 52 kcal</li>
+          <li><b>Carbohidratos:</b> 14 g (azúcares naturales ~10 g)</li>
+          <li><b>Fibra:</b> 2.4 g</li>
+          <li><b>Proteínas:</b> 0.3 g</li>
+          <li><b>Grasas:</b> 0.2 g</li>
+          <li><b>Vitamina C:</b> ~7% VDR</li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../../javascript/app.js"></script>
+</body>
+</html>
