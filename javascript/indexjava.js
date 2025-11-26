@@ -9,7 +9,7 @@ botonNoti.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btnInfoComida").addEventListener("click", () => {
-        window.location.href = "pages/informacionComida/subpaginasInformacion/registrarAlimentos.html";
+        window.location.href = "pages/informacionComida/informacionDeComidas.html";
     });
 
     document.getElementById("btnPlanMeta").addEventListener("click", () => {
@@ -24,4 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "pages/configuracion.html";
     });
 
+});
+
+
+
+document.getElementById("btnAsistente").addEventListener("click", () => {
+    window.location.href = "pages/AsesoramientoProfesional.html"; 
 });

@@ -144,11 +144,12 @@ section {
 
     
     display:flex;
+    justify-content: center;
 }
 
 
 .EspacioCuadros{
-
+    justify-content: center;
     display:flex;
 }
 

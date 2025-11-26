@@ -17,3 +17,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+
+function mostrarAlimentos() {
+    const lista = document.getElementById("listaAlimentos");
+
+    lista.innerHTML = ""; // limpia antes de agregar
+
+    alimentos.forEach(alimento => {
+        const item = document.createElement("div");
+        item.classList.add("alimentoItem");
+
+        item.innerHTML = `
+            <img src="${alimento.imagen}" alt="${alimento.nombre}" class="imagenAlimento">
+            <p>${alimento.nombre}</p>
+        `;
+
+        lista.appendChild(item);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", mostrarAlimentos);
+
+document.getElementById("irCrear").addEventListener("click", () => {
+    window.location.href = "../../../pages/informacionComida/subpaginasInformacion/registrarAlimentos.html"; 
+});

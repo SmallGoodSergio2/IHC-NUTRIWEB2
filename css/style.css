@@ -47,9 +47,9 @@ section {
 }
 
 footer {
-
+    
+    padding:10px;
     background-color: #95674C;
-    display:flex;
     margin:0;
     height: 200px;
     justify-content: center;
@@ -273,4 +273,24 @@ nav2 h3:hover {
     height: 300px;
     overflow: auto;
     
+}
+
+
+.TextoFoot{
+
+
+    justify-items: center;
+}
+
+
+.LinkAsistente{
+
+
+    justify-items: center;
+}
+
+.AtencionCliente{
+
+
+    color: white;
 }

@@ -316,3 +316,63 @@ nav2 h3:hover {
     background-color: #FFEBD4; 
     transform: scale(1.05);   
 }
+
+#listaAlimentos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.alimentoItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagenAlimento {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.btnIrPagina {
+    padding: 10px 20px;
+    background-color: #ffce94;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .3s ease;
+    position: relative;
+    left:100px;
+    top:100px;
+}
+
+.btnIrPagina:hover {
+    background-color: #ffdcb8;
+    transform: scale(1.05);
+}
+
+.cuadro1{
+
+    display: flex;
+}
+
+.irCrear {
+    padding: 10px 20px;
+    background-color: #ffce94;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .3s ease;
+    position: relative;
+    left:250px;
+}
+
+.irCrear:hover {
+    background-color: #ffdcb8;
+    transform: scale(1.05);
+}
+
