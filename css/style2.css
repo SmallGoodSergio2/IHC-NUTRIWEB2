@@ -188,7 +188,37 @@ section {
     height:300px;
     background-color: #F3D3B4;
     overflow: auto;
+    text-align: center;
+    border-radius: 35px;
 }
+
+
+.contenido1 img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.botones {
+    margin-top: 15px;
+}
+
+.btnControl,
+.btnIrPagina {
+    background-color: #47a386;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnControl:hover,
+.btnIrPagina:hover {
+    background-color: #3b8d72;
+}
+
 
 
 .cuadro2{
@@ -354,10 +384,6 @@ nav2 h3:hover {
     transform: scale(1.05);
 }
 
-.cuadro1{
-
-    display: flex;
-}
 
 .irCrear {
     padding: 10px 20px;
@@ -376,3 +402,77 @@ nav2 h3:hover {
     transform: scale(1.05);
 }
 
+.cuadros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cuadro-boton1 {
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #ddd;
+    position: relative;
+
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.cuadro-boton2 {
+    margin-top: 30px;
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #ddd;
+}
+.cuadro-boton1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+.cuadro-boton2:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+.imagenCuadro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenCuadro2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textoEncima1 {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+}
+
+.textoEncima2 {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+}
