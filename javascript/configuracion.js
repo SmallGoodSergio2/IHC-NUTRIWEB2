@@ -5,3 +5,4 @@ function openSidebar() {
 function closeSidebar() {
     document.getElementById("sidebar").classList.remove("open");
 }
+
