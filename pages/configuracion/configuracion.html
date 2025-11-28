@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../css/configuracion.css">
+    <script src="../../javascript/configuracion.js" defer></script>
+</head>
+<body>
+    
+<header>
+
+   <div class="TituloPagina">
+
+        <h2>NUTRIWEB</h2>
+
+
+   </div>
+</header>
+
+<nav>
+
+
+  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
+   
+  <div class = "Nombre">
+
+    
+    <h2 class ="usuarioNombre">Nombre de usuario: Sergio Saavedra</h2>
+
+  </div>
+   
+
+  <div class ="Notificacion">
+
+
+        <h2 id ="botonNotificacion"class ="botonNotificacion">Notificaciones</h2>
+
+  </div>
+
+  <div id="panelNotificaciones" class="panel-hidden">
+    <h3>Notificaciones</h3>
+    <ul id="listaNotificaciones">
+        <li>No tienes nuevas notificaciones</li>
+    </ul>
+</div>
+
+</nav>
+
+
+<nav2>
+   
+   <h3 id="btnInfoComida" class="InformacionComida">Informacion Comida</h3>
+   <h3 id="btnPlanMeta" class="PlanificacionMeta">Planificacion Meta Alimentaria</h3>
+   <h3 id="btnRecomendaciones" class="Recomendaciones">Recomendaciones</h3>
+   <h3 id="btnConfig" class="Configuracion">Configuracion</h3>
+</nav2>
+
+
+
+<section class="layout">
+
+    <div id="sidebar" class="sidebar">
+        <button class="closeBtn" onclick="closeSidebar()">✖</button>
+        <h2 class="sidebar-title">Menú</h2>
+        <a class="sidebar-item" href="#">Inicio</a>
+        <a class="sidebar-item" href="#">Alimentos</a>
+        <a class="sidebar-item" href="#">Planes</a>
+        <a class="sidebar-item" href="#">Configuración</a>
+    </div>
+
+    <div id="contenido" class="contenido">
+        <button id="openSidebarBtn" class="openSidebarBtn" onclick="openSidebar()">☰</button>
+
+        <!-- AQUÍ VA TU CONTENIDO DE LA PÁGINA -->
+        <h2>Contenido de la página</h2>
+        <p>Todo esto será empujado a la derecha.</p>
+    </div>
+
+</section>
+
+
+
+
+<footer>
+
+  <p>. </p>
+  
+  <div class="TextoFoot">
+     <h3 class ="TextoFooter">Si tiene alguna duda sobre la página no dude en contactarnos</h3>
+
+  </div>   
+     
+  <div class ="LinkAsistente">
+
+
+    <h3 class="AtencionCliente" id="btnAsistente">
+         Atencion al cliente
+    </h3>
+  </div>
+
+</footer>
+
+
+
+</body>
+</html>
