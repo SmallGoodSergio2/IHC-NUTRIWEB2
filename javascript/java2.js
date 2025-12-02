@@ -1,3 +1,14 @@
+
+const botonNoti = document.getElementById("botonNotificacion");
+const panelNoti = document.getElementById("panelNotificaciones");
+
+botonNoti.addEventListener("click", () => {
+    panelNoti.classList.toggle("panel-visible");
+    panelNoti.classList.toggle("panel-hidden");
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btnInfoComida").addEventListener("click", () => {
@@ -5,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("btnPlanMeta").addEventListener("click", () => {
-        window.location.href = "../../../pages/planificarMeta/subpaginasplanificar/crearMetas.html";
+        window.location.href = "../../../pages/planificarMeta/planificacionMeta.html";
     });
 
     document.getElementById("btnRecomendaciones").addEventListener("click", () => {
-        window.location.href = "../../../pages/recomendar/recomendaciones.html";
+        window.location.href = "../../../pages/recomendar/recomendaciones2.html";
     });
 
     document.getElementById("btnConfig").addEventListener("click", () => {

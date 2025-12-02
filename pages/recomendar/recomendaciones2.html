@@ -4,41 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriWeb - Recomendaciones de Recetas</title>
-    <link rel="stylesheet" href="recomendaciones.css">
+    <link rel="stylesheet" href="../../css/recomendaciones2.css">
+    <script src="../../javascript/recomendaciones.js"></script>
 </head>
+
+
+
 <body>
-    <!-- Header -->
-    <div class="header">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-        </div>
-        <div class="logo-section">
-            <div class="logo">N</div>
-            <div class="user-info">
-                <h3>Sergio Saavedra</h3>
-            </div>
-        </div>
-        <div class="header-right">
-            <span class="progress-text">Progreso de meta alimentaria más reciente<br><strong>45% Completado</strong></span>
-            <svg class="notification-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-            </svg>
-        </div>
-    </div>
 
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-        <div class="menu-item">Buscar información de comida</div>
-        <div class="menu-item">Planificar metas</div>
-        <div class="menu-item active">Recomendaciones</div>
-        <div class="menu-item">Atención al cliente</div>
-        <div class="menu-item">Configuración</div>
-        <div class="menu-item">Cerrar sesión</div>
-    </div>
 
+
+
+    
+<header>
+
+   <div class="TituloPagina">
+
+        <h2>NUTRIWEB</h2>
+
+
+   </div>
+</header>
+
+<nav>
+
+
+  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
+   
+  <div class = "Nombre">
+
+    
+    <h2 class ="usuarioNombre">Nombre de usuario: Sergio Saavedra</h2>
+
+  </div>
+   
+
+  <div class ="Notificacion">
+
+
+        <h2 id ="botonNotificacion"class ="botonNotificacion">Notificaciones</h2>
+
+  </div>
+
+  <div id="panelNotificaciones" class="panel-hidden">
+    <h3>Notificaciones</h3>
+    <ul id="listaNotificaciones">
+        <li>No tienes nuevas notificaciones</li>
+    </ul>
+</div>
+
+</nav>
+
+
+<nav2>
+   
+   <h3 id="btnInfoComida" class="InformacionComida">Informacion Comida</h3>
+   <h3 id="btnPlanMeta" class="PlanificacionMeta">Planificacion Meta Alimentaria</h3>
+   <h3 id="btnRecomendaciones" class="Recomendaciones">Recomendaciones</h3>
+   <h3 id="btnConfig" class="Configuracion">Configuracion</h3>
+</nav2>
     <!-- Main Content -->
     <div class="main-content">
         <h1 class="page-title">Recomendaciones de recetas</h1>
@@ -86,6 +110,6 @@
         </div>
     </div>
 
-    <script src="recomendaciones.js"></script>
+
 </body>
 </html>

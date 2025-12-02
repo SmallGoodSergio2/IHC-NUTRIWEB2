@@ -5,40 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asesoramiento Profesional</title>
     <link rel="stylesheet" href="../css/AsesoramientoProfesional.css">
+    <script src="../javascript/AsesoramientoProfesional.js" defer></script>
+
 </head>
 <body>
 
-    <!-- Barra Superior -->
-    <header class="top-bar">
-        <div class="logo-section">
-            <img src="logo.png" class="logo" alt="">
-            <div class="user-info">
-                <img src="usuario.png" class="user-photo" alt="">
-                <span class="user-name">Sergio Saavedra</span>
-            </div>
-        </div>
+<header>
 
-        <div class="progress-title">Progreso de meta alimentaria más reciente</div>
+   <div class="TituloPagina">
 
-        <div class="notification-section">
-            <img src="icono_notif.png" class="icon" alt="">
-            <span>Notificaciones</span>
-        </div>
-    </header>
+        <h2>NUTRIWEB</h2>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <button class="menu-btn">☰</button>
-        <nav>
-            <a href="#">Buscar información de comidas</a>
-            <a href="#">Planificar metas</a>
-            <a href="#">Recordatorios</a>
-            <a href="#">Atención al cliente</a>
-            <a href="#">Configuración</a>
-            <a href="#">Cerrar sesión</a>
-        </nav>
-    </aside>
 
+   </div>
+</header>
+
+<nav>
+
+
+  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="../assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
+   
+  <div class = "Nombre">
+
+    
+    <h2 class ="usuarioNombre">Nombre de usuario: Sergio Saavedra</h2>
+
+  </div>
+   
+
+  <div class ="Notificacion">
+
+
+        <h2 id ="botonNotificacion"class ="botonNotificacion">Notificaciones</h2>
+
+  </div>
+
+  <div id="panelNotificaciones" class="panel-hidden">
+    <h3>Notificaciones</h3>
+    <ul id="listaNotificaciones">
+        <li>No tienes nuevas notificaciones</li>
+    </ul>
+  </div>
+
+</nav>
+
+
+<nav2>
+   
+   <h3 id="btnInfoComida" class="InformacionComida">Informacion Comida</h3>
+   <h3 id="btnPlanMeta" class="PlanificacionMeta">Planificacion Meta Alimentaria</h3>
+   <h3 id="btnRecomendaciones" class="Recomendaciones">Recomendaciones</h3>
+   <h3 id="btnConfig" class="Configuracion">Configuracion</h3>
+</nav2>
+
+    
+<section>  
     <!-- Contenido principal -->
     <main class="content">
         <h1>Asesoramiento</h1>
@@ -63,6 +84,6 @@
 </div>
 
 
-    <script src="AsesoramientoProfesional.js"></script>
+</section>
 </body>
 </html>

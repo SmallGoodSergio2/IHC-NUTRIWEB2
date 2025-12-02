@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/indexjava.js" defer></script>
+    <link rel="stylesheet" href="../../../css/configuracion.css">
+    <script src="../../javascript/java2.js" defer></script>
+    <script src="../../javascript/infoalimento.js" defer></script>
+    <script src="../../javascript/historial_alimentacion.js" defer></script>
 </head>
 <body>
     
@@ -58,35 +60,27 @@
 </nav2>
 
 
-<section>
 
-    <div class="introMeta">
-        <h2 class="introTitulo">Bienvenido a Nutriweb</h2>
+<section class="layout">
 
-        <p class="introTexto">
-            En NutriWeb puedes crear, registrar y monitorear tus metas alimentarias para mejorar
-            tus hábitos de nutrición. Desde bajar o subir de peso, hasta mantener un estilo
-            de vida más saludable, aquí encontrarás herramientas diseñadas para ayudarte
-            a avanzar paso a paso.
-        </p>
+    <div id="sidebar" class="sidebar">
+        <button class="closeBtn" onclick="closeSidebar()">✖</button>
+        <h2 class="sidebar-title">Mi perfil</h2>
+        <a class="sidebar-item" href="../../pages/configuracion/subpaginaconfiguracion/historialAlimentacion.html">Historial Alimentación</a>
+        <a class="sidebar-item" href="#">Visualizacion Progreso Grafico</a>
+        <a class="sidebar-item" href="#">Visualizacion Progreso Visual</a>
+        <a class="sidebar-item" href="#">Mensaje Motivacional</a>
+    </div>
 
-        <p class="introTexto">
-            Para comenzar, dirígete a la sección <strong>"Planificación Meta Alimentaria"</strong> donde podrás:
-        </p>
+    <div id="contenido" class="contenido">
+        <button id="openSidebarBtn" class="openSidebarBtn" onclick="openSidebar()">☰</button>
 
-        <ul class="introLista">
-            <li>📌 Crear metas personalizadas según tus objetivos.</li>
-            <li>📊 Registrar tu progreso de forma sencilla.</li>
-            <li>⏳ Establecer una duración estimada y una fecha de inicio.</li>
-            <li>📝 Añadir notas o recordatorios importantes.</li>
-        </ul>
-
-        <p class="introTexto">
-            ¡Tu camino hacia una mejor alimentación comienza aquí!
-        </p>
+        <h2>Historial de Alimentación</h2>
+        <div id="listaHistorial" class="lista-historial"></div>
     </div>
 
 </section>
+
 
 
 

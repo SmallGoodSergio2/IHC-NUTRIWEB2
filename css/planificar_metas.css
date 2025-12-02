@@ -1,0 +1,765 @@
+:root {
+  --bg: #f7b18a;
+  --top: #e3c7a9;
+  --ink: #1c130e;
+  --divider: #2b1b13;
+  --accent: #7d5846;
+  --accent-2: #8d6a57;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #FFF4EB 0%, #FFE1D0 40%, #FFB68B 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+
+/* ===== HEADER ===== */
+
+/* ===== PROGRESS BAR ===== */
+.progress {
+  display: grid;
+  gap: 6px;
+  justify-items: center;
+  margin-bottom: 8px;
+}
+
+.progress__title { font-weight: 700; }
+
+.progress__bar {
+  width: min(520px, 100%);
+  height: 36px;
+  padding: 6px;
+  background: #f2e0c8;
+  border-radius: 18px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, .08);
+}
+
+.progress__fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 14px;
+}
+
+.progress__percent {
+  font-weight: 700;
+  text-align: center;
+  margin-top: -4px;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+
+/* ===== DIVIDER ===== */
+.divider { height: 14px; background: var(--divider); }
+
+
+/* ===== CONTENT ===== */
+.content {
+  background-color: transparent;
+  padding: 40px 24px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Título de páginas */
+.title-box {
+  background: #fbe2c4;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 12px 26px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+
+
+/* ============================================================
+   =============== PLANIFICAR METAS (CARDS) ====================
+   ============================================================ */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.card {
+  width: min(640px, 90%);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+
+  opacity: 0;
+  transform: translateY(22px);
+  animation: cardDrop 0.55s ease forwards;
+}
+
+/* Animación cascada */
+.card:nth-child(1) { animation-delay: 0.10s; }
+.card:nth-child(2) { animation-delay: 0.25s; }
+.card:nth-child(3) { animation-delay: 0.40s; }
+.card:nth-child(4) { animation-delay: 0.55s; }
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 6px;
+  left: 0; right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 4px 0;
+  text-align: center;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.card:hover {
+  transform: translateX(6px);
+  filter: brightness(0.97);
+}
+
+.card:active {
+  transform: translateX(10px);
+}
+
+@keyframes cardDrop {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ============================================================
+   =================== FORMULARIO CREAR META ===================
+   ============================================================ */
+
+.goal-form {
+  max-width: 650px;
+  margin: 24px auto 0;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.goal-form__group { margin-bottom: 16px; }
+
+.goal-form__row {
+  display: flex;
+  gap: 16px;
+}
+
+.goal-form__row .goal-form__group { flex: 1; }
+
+.goal-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.goal-form input,
+.goal-form select,
+.goal-form textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #d9b59b;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.goal-form textarea { resize: vertical; }
+
+.btn-guardar-meta {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 999px;
+  background-color: #b96c3b;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-guardar-meta:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.goal-form__hint {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #6b4b3a;
+}
+
+
+/* ============================================================
+   =============== METAS ALIMENTARIAS (PAGE) ===================
+   ============================================================ */
+
+/* Solo esta página usa este diseño */
+.page-metas .content {
+  max-width: 900px;
+  margin: 40px auto 60px;
+}
+
+.page-metas .title-box { margin-bottom: 26px; }
+
+
+/* -------- Filtros tipo chip -------- */
+.page-metas .goal-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.page-metas .goal-filter {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #d4b399;
+  background: rgba(251, 226, 196, 0.9);
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.15s ease;
+}
+
+.page-metas .goal-filter--active {
+  background: #b96c3b;
+  color: #fff;
+  border-color: #b96c3b;
+  box-shadow: 0 0 0 2px rgba(185,108,59,0.25);
+  transform: translateY(-1px);
+}
+
+
+/* -------- Cards premium -------- */
+.page-metas .goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.page-metas .goal-card {
+  width: min(620px,100%);
+  background: rgba(255,255,255,0.95);
+  padding: 18px 24px 20px;
+  border-radius: 20px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.6);
+  backdrop-filter: blur(4px);
+  transition: 0.18s ease;
+}
+
+.page-metas .goal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  border-color: rgba(185,108,59,0.28);
+}
+
+.page-metas .goal-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.page-metas .goal-card p {
+  margin: 3px 0;
+  font-size: 0.93rem;
+}
+
+
+/* -------- Barra de progreso -------- */
+.page-metas .progress__bar--small {
+  margin-top: 12px;
+  width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.page-metas .goal-progress-label {
+  text-align: right;
+  margin-top: 4px;
+  font-size: 0.82rem;
+  color: #6b4b3a;
+}
+
+
+/* -------- Botones -------- */
+.page-metas .goal-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.page-metas .btn-goal {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.page-metas .btn-goal:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.page-metas .btn-goal--primary { background: #b96c3b; color: #fff; }
+.page-metas .btn-goal--secondary {
+  background: #f5e1cf;
+  color: #4b3628;
+  border: 1px solid #d1b095;
+}
+.page-metas .btn-goal--danger { background: #f56a6a; color: #fff; }
+
+
+/* -------- Badge automático -------- */
+.page-metas .goal-card::before {
+  content: attr(data-status);
+  position: absolute;
+  top: 12px; right: 18px;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eee;
+  color: #444;
+}
+
+.page-metas .goal-card[data-status*="activas"]::before,
+.page-metas .goal-card[data-status*="progreso"]::before {
+  content: "En progreso";
+  background: rgba(255,204,140,0.9);
+  color: #8a4b25;
+}
+
+.page-metas .goal-card[data-status*="completadas"]::before {
+  content: "Completada";
+  background: rgba(176,219,148,0.95);
+  color: #295b25;
+}
+
+.page-metas .goal-card[data-status*="canceladas"]::before {
+  content: "Cancelada";
+  background: rgba(250,176,176,0.96);
+  color: #7a2020;
+}
+
+
+.page-metas .goals-empty {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #6b4b3a;
+  text-align: center;
+}
+
+.page-metas .goal-new-wrapper {
+  margin-top: 28px;
+  text-align: center;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-metas .content { margin-top: 24px; }
+  .page-metas .goal-card { padding: 16px 16px 18px; }
+  .page-metas .goal-card::before { right: 12px; }
+  .page-metas .goal-actions { justify-content: center; }
+}
+
+
+
+
+
+.goal-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: transform .2s;
+}
+
+.goal-card:hover {
+    transform: scale(1.01);
+}
+
+.goal-card__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 15px;
+}
+
+.goal-card__title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.goal-delete {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.goal-delete:hover {
+    background: #ff4b4b;
+}
+header {
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    justify-content: center;
+
+}
+
+.TituloPagina{
+
+
+    font-size: 48px;
+}
+
+
+nav {
+
+    background-color: #FEE7D1;
+    display:flex;
+}
+
+
+nav2 {
+
+
+
+   background-color: #FFB68B;
+   display:flex;
+   position:sticky;
+   top:0;
+   z-index: 1000;
+}
+
+section {
+
+
+    background-color: #FFEACB;
+    overflow: hidden;
+    
+}
+
+footer {
+
+    background-color: #95674C;
+    display:flex;
+    margin:0;
+    height: 200px;
+    justify-content: center;
+}
+
+.ActividadReciente{
+
+
+    margin-left: 200px;
+    margin-right: 40px;
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.AdministracionTarea{
+
+
+
+    margin-left:800px;
+    margin-top:30px;
+    position:relative;
+}
+
+
+.InformacionComida{
+
+
+
+    
+    margin-left:350px;
+    margin-right:80px;
+
+}
+
+
+
+
+.PlanificacionMeta{
+
+
+
+    margin-right:80px;
+}
+
+.Recomendaciones{
+
+
+    margin-right:80px;
+}
+
+.YendoMenu{
+
+    
+   width:150px;
+   height: 150px;
+   margin-right: 20px;
+
+}
+
+
+
+
+.NutriwebImagen{
+
+   width:150px;
+   height: 145px;
+
+}
+
+sectionimage
+{
+   
+  margin:0;
+  display:flex;
+
+}
+
+section {
+
+
+ background-color: #FFEACB;
+
+
+}
+
+
+.informacionPortada{
+
+    width: 100%;
+    height:700px;
+    margin:0;
+
+} 
+
+.botonNotificacion{
+
+
+   position: relative;
+
+   left:300px;
+   top:40px;
+}
+#panelNotificaciones {
+    position: absolute;
+    top: 100px; /* Ajusta según el alto de tu nav */
+    right: 20px;
+    width: 280px;
+    background: #47F4AC;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+.panel-hidden {
+    opacity: 0;
+    pointer-events: none; /* No permite click cuando está oculto */
+    transform: translateY(-10px);
+}
+
+.panel-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.botonNotificacion:hover {
+    background-color: #FFF4E4; /* color solicitado */
+    cursor: pointer;
+    transform: scale(1.03);
+    width: 150px;
+    height: 40px;
+    border-radius: 15%;
+}
+
+nav2 h3 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+    cursor: pointer;
+}
+
+nav2 h3:hover {
+    background-color: #FFEBD4; 
+    transform: scale(1.05);   
+}
+
+header {
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    justify-content: center;
+
+}
+
+.TituloPagina{
+
+
+    font-size: 48px;
+}
+
+
+nav {
+
+    background-color: #FEE7D1;
+    display:flex;
+}
+
+
+nav2 {
+
+
+
+   background-color: #FFB68B;
+   display:flex;
+   position:sticky;
+   top:0;
+   z-index: 1000;
+}
+
+section {
+
+
+    background-color: #FFEACB;
+    overflow: hidden;
+    
+}
+
+footer {
+
+    background-color: #95674C;
+    display:flex;
+    margin:0;
+    height: 200px;
+    justify-content: center;
+}
+
+.ActividadReciente{
+
+
+    margin-left: 200px;
+    margin-right: 40px;
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.AdministracionTarea{
+
+
+
+    margin-left:800px;
+    margin-top:30px;
+    position:relative;
+}
+.ComidasRecomendadas{
+
+
+
+   margin-top:800px;
+   position:relative;
+   right:580px;
+
+}
+
+.InformacionComida{
+
+
+
+
+    margin-left:350px;
+    margin-right:80px;
+
+}
+
+
+
+
+.PlanificacionMeta{
+
+
+
+    margin-right:80px;
+}
+
+.Recomendaciones{
+
+
+    margin-right:80px;
+}
