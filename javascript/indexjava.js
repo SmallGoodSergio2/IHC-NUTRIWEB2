@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("btnPlanMeta").addEventListener("click", () => {
-        window.location.href = "/IHC-NUTRIWEB2/pages/planificarMeta/subpaginasplanificar/crearMetas.html";
+        window.location.href = "/IHC-NUTRIWEB2/pages/planificarMeta/planificacionMeta.html";
     });
 
     document.getElementById("btnRecomendaciones").addEventListener("click", () => {
