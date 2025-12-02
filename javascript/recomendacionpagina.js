@@ -19,5 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("btnReceta").addEventListener("click", function() {
-    window.location.href = "../../../pages/recomendar/recetasimple.html"; 
+    window.location.href = "../../../pages/recomendar/recomendaciones1.html"; 
 });

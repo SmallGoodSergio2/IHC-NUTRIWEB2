@@ -11,21 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnPlanMeta = document.getElementById("btnPlanMeta");
     if (btnPlanMeta) {
         btnPlanMeta.addEventListener("click", () => {
-            window.location.href = "../../../pages/planificarMeta/subpaginasInformacion/registrarAlimentos.html";
+            window.location.href = "../../pages/planificarMeta/planificacionMeta.html";
         });
     }
 
     const btnRecomendaciones = document.getElementById("btnRecomendaciones");
     if (btnRecomendaciones) {
         btnRecomendaciones.addEventListener("click", () => {
-            window.location.href = "../../../pages/recomendar/recomendaciones.html";
+            window.location.href = "../../pages/recomendar/recomendaciones2.html";
         });
     }
 
     const btnConfig = document.getElementById("btnConfig");
     if (btnConfig) {
         btnConfig.addEventListener("click", () => {
-            window.location.href = "../../../pages/configuracion.html";
+            window.location.href = "../../pages/configuracion/configuracion.html";
         });
     }
 

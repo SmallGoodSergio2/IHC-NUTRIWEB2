@@ -1,25 +1,152 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     overflow-x: hidden;
+    margin:0;
 }
 
-/* Header */
-.header {
-    background-color: #f5d5b8;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #ddd;
-    position: relative;
-    z-index: 100;
+header {
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    justify-content: center;
+
+}
+
+.TituloPagina{
+
+
+    font-size: 48px;
+}
+
+
+nav {
+
+    background-color: #FEE7D1;
+    display:flex;
+}
+
+
+nav2 {
+
+
+
+   background-color: #FFB68B;
+   display:flex;
+   position:sticky;
+   top:0;
+   z-index: 1000;
+}
+
+section {
+
+
+    background-color: #FFEACB;
+    overflow: hidden;
+    
+}
+
+footer {
+    
+    padding:10px;
+    background-color: #95674C;
+    margin:0;
+    height: 200px;
+    justify-content: center;
+}
+
+.ActividadReciente{
+
+
+    margin-left: 200px;
+    margin-right: 40px;
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.AdministracionTarea{
+
+
+
+    margin-left:800px;
+    
+    position:relative;
+}
+.ComidasRecomendadas{
+
+
+
+   margin-top:800px;
+   position:relative;
+   right:580px;
+
+}
+
+.InformacionComida{
+
+
+
+
+    margin-left:350px;
+    margin-right:80px;
+
+}
+
+
+
+
+.PlanificacionMeta{
+
+
+
+    margin-right:80px;
+}
+
+.Recomendaciones{
+
+
+    margin-right:80px;
+}
+
+.YendoMenu{
+
+    
+   width:150px;
+   height: 150px;
+   margin-right: 20px;
+
+}
+
+
+
+
+.NutriwebImagen{
+
+   width:150px;
+   height: 145px;
+
+}
+
+sectionimage
+{
+   
+  margin:0;
+  display:flex;
+
+}
+
+section {
+
+
+ background-color: #FFEACB;
+
+
 }
 
 .menu-icon {
