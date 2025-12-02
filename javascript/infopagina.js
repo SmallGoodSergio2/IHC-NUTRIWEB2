@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
     const btnInfoComida = document.getElementById("btnInfoComida");
     if (btnInfoComida) {
         btnInfoComida.addEventListener("click", () => {
@@ -36,4 +35,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
- })
+    // --- Cuadros ---
+    const cuadroBoton1 = document.getElementById("cuadrobo1");
+    if (cuadroBoton1) {
+        cuadroBoton1.addEventListener("click", () => {
+            window.location.href = "../../../pages/informacionComida/subpaginasInformacion/descripcionDetallada.html";
+        });
+    }
+
+    const cuadroBoton2 = document.getElementById("cuadrobo2");
+    if (cuadroBoton2) {
+        cuadroBoton2.addEventListener("click", () => {
+            window.location.href = "../../../pages/informacionComida/subpaginasInformacion/registrarAlimentos.html";
+        });
+    }
+
+});
