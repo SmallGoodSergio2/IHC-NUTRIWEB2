@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
     const btnInfoComida = document.getElementById("btnInfoComida");
     if (btnInfoComida) {
         btnInfoComida.addEventListener("click", () => {
@@ -59,4 +58,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
- })
+});

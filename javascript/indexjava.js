@@ -9,7 +9,7 @@ botonNoti.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btnInfoComida").addEventListener("click", () => {
-        window.location.href = "pages/informacionComida/informacionDeComidas.html";
+        window.location.href = "/IHC-NUTRIWEB2/pages/informacionComida/informacionDeComidas.html";
     });
 
     document.getElementById("btnPlanMeta").addEventListener("click", () => {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("btnRecomendaciones").addEventListener("click", () => {
-        window.location.href = "pages/recomendar/recomendaciones.html";
+        window.location.href = "/IHC-NUTRIWEB2/pages/recomendar/recomendaciones2.html";
     });
 
     document.getElementById("btnConfig").addEventListener("click", () => {
