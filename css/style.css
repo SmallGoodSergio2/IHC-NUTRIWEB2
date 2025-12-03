@@ -1,0 +1,339 @@
+:root {
+  --bg: #f7b18a;
+  --top: #e3c7a9;
+  --ink: #1c130e;
+  --divider: #2b1b13;
+  --accent: #7d5846;
+  --accent-2: #8d6a57;
+}
+
+body {
+
+
+    margin: 0;
+}
+header {
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    justify-content: center;
+
+}
+
+.TituloPagina{
+
+
+    font-size: 48px;
+}
+
+
+nav {
+
+    background-color: #FEE7D1;
+    display:flex;
+}
+
+
+nav2 {
+
+
+
+   background-color: #FFB68B;
+   display:flex;
+   position:sticky;
+   top:0;
+   z-index: 1000;
+}
+
+section {
+
+
+    background-color: #FFEACB;
+    overflow: hidden;
+    
+}
+
+footer {
+    
+    padding:10px;
+    background-color: #95674C;
+    margin:0;
+    height: 200px;
+    justify-content: center;
+}
+
+.ActividadReciente{
+
+
+    margin-left: 200px;
+    margin-right: 40px;
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.AdministracionTarea{
+
+
+
+    margin-left:800px;
+    
+    position:relative;
+}
+.ComidasRecomendadas{
+
+
+
+   margin-top:800px;
+   position:relative;
+   right:580px;
+
+}
+
+.InformacionComida{
+
+
+
+
+    margin-left:350px;
+    margin-right:80px;
+
+}
+
+
+
+
+.PlanificacionMeta{
+
+
+
+    margin-right:80px;
+}
+
+.Recomendaciones{
+
+
+    margin-right:80px;
+}
+
+.YendoMenu{
+
+    
+   width:150px;
+   height: 150px;
+   margin-right: 20px;
+
+}
+
+
+
+
+.NutriwebImagen{
+
+   width:150px;
+   height: 145px;
+
+}
+
+sectionimage
+{
+   
+  margin:0;
+  display:flex;
+
+}
+
+section {
+
+
+ background-color: #FFEACB;
+
+
+}
+
+
+.informacionPortada{
+
+    width: 100%;
+    height:700px;
+    margin:0;
+
+} 
+.miniTitulos{
+
+
+
+    display:flex;
+    gap:20px;
+}
+
+.clearfix{
+
+    clear:both;
+}
+.Alimentos{
+
+
+
+    margin-left: 200px;
+    margin-right: 600px;
+}
+
+.TituloRegistrar{
+
+
+    margin-left:10px;
+}
+.cuadros{
+
+
+    display:flex;
+    
+}
+
+.cuadro1{
+
+    position:relative;
+    margin-top: 60px;
+    right:900px;
+
+    width:500px;
+    height:100px;
+    border: 2px solid #333;
+    overflow: auto;
+}
+
+
+.usuarioNombre{
+
+
+    margin-top:80px;
+    margin-left: 300px;
+}
+
+
+.botonNotificacion{
+
+
+   position: relative;
+
+   left:300px;
+   top:40px;
+}
+#panelNotificaciones {
+    position: absolute;
+    top: 100px; /* Ajusta según el alto de tu nav */
+    right: 20px;
+    width: 280px;
+    background: #47F4AC;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+.panel-hidden {
+    opacity: 0;
+    pointer-events: none; /* No permite click cuando está oculto */
+    transform: translateY(-10px);
+}
+
+.panel-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.botonNotificacion:hover {
+    background-color: #FFF4E4; /* color solicitado */
+    cursor: pointer;
+    transform: scale(1.03);
+    width: 150px;
+    height: 40px;
+    border-radius: 15%;
+}
+
+nav2 h3 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+    cursor: pointer;
+}
+
+nav2 h3:hover {
+    background-color: #FFEBD4; 
+    transform: scale(1.05);   
+}
+
+.CuadroActividad{
+
+
+
+
+    margin-left: 150px;
+    background-color: #F3D3B4;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    
+}
+
+
+.TextoFoot{
+
+
+    justify-items: center;
+}
+
+
+.LinkAsistente{
+
+
+    justify-items: center;
+}
+
+.AtencionCliente{
+
+
+    color: white;
+}
+
+
+.introMeta {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 40px;
+    background: #FFF4E4;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #E6C7A4;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.introTitulo {
+    font-size: 32px;
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+.introTexto {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.introLista {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.introLista li {
+    margin-bottom: 6px;
+}

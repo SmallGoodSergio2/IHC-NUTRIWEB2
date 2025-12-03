@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metas Alimentarias</title>
+    <link rel="stylesheet" href="../css/VerificarMeta.css">
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="logo-section">
+            <img src="NUTRIWEBLOGO.png" class="logo" alt="NutriWeb" />
+            <div class="user-info">
+                <img src="usuario.png" class="user-photo" alt="Usuario" />
+                <span>Sergio Saavedra</span>
+            </div>
+        </div>
+        <div class="progress-title">Progreso de meta alimentaria más reciente</div>
+        <div class="notifications">
+            <span>Notificaciones</span>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <button class="menu-btn">☰</button>
+        <nav>
+            <a href="informacionComida/informacionDeComidas.html">Buscar información de comidas</a>
+            <a href="planificarMeta/planificacionMeta.html">Planificar metas</a>
+            <a href="Recordatorios.html">Recordatorios</a>
+            <a href="configuracion/subpaginaconfiguracion/atencion.html">Atención al cliente</a>
+            <a href="configuracion/configuracion.html">Configuración</a>
+            <a href="../index.html">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <h1>Metas Alimentarias</h1>
+
+        <div class="card">
+            <label for="fecha">Select Date</label>
+            <input type="date" id="fecha" />
+
+            <button class="btn">Ver meta</button>
+            <button class="btn-secondary">Regresar</button>
+        </div>
+    </main>
+    <script src="../javascript/VerificarMeta.js"></script>
+</body>
+</html>

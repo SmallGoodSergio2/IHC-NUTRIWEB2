@@ -1,0 +1,316 @@
+body {
+
+
+    margin: 0;
+}
+header {
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    justify-content: center;
+
+}
+
+.TituloPagina{
+
+
+    font-size: 48px;
+}
+
+
+nav {
+
+    background-color: #FEE7D1;
+    display:flex;
+}
+
+
+nav2 {
+
+
+
+   background-color: #FFB68B;
+   display:flex;
+   position:sticky;
+   top:0;
+}
+
+
+
+footer {
+
+    background-color: #95674C;
+    display:flex;
+    margin:0;
+    height: 200px;
+    justify-content: center;
+}
+
+.CrearMeta{
+
+
+    margin-left: 100px;
+    margin-right: 40px;
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.AdministracionTarea{
+
+
+
+    margin-left:800px;
+    margin-top:30px;
+    position:relative;
+}
+
+
+.InformacionComida{
+
+
+
+
+    margin-left:350px;
+    margin-right:80px;
+
+}
+
+
+
+
+.PlanificacionMeta{
+
+
+
+    margin-right:80px;
+}
+
+.Recomendaciones{
+
+
+    margin-right:80px;
+}
+
+.YendoMenu{
+
+    
+   width:150px;
+   height: 150px;
+   margin-right: 20px;
+
+}
+
+
+
+
+.NutriwebImagen{
+
+   width:150px;
+   height: 145px;
+
+}
+
+sectionimage
+{
+   
+  margin:0;
+  display:flex;
+
+}
+
+section {
+
+
+ background-color: #FFEACB;
+ overflow: hidden;
+
+}
+
+
+.informacionPortada{
+
+    width: 100%;
+    height:700px;
+    margin:0;
+
+} 
+
+.Espacio1{
+
+
+    
+    display:flex;
+    justify-content: center;
+}
+
+
+.EspacioCuadros{
+    justify-content: center;
+    display:flex;
+}
+
+.Cuadro1{
+
+
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
+    overflow: auto;
+}
+
+.Cuadro2{
+
+
+    margin-top: 50px;
+    margin-left:30px;
+    width:700px;
+    height:300px;
+    background-color: #F3D3B4;
+    overflow: auto;
+}
+
+.EspacioPresupuesto{
+
+
+
+    display:flex;
+    justify-content: center;
+}
+
+.TextoPresupuesto{
+    margin-top:100px;
+    width: 300px;
+    height: 200px;
+    overflow:auto;
+    margin-right:100px;
+
+}
+
+
+.Filtro{
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    height: 140px;
+    width: 650px;
+    margin-left:550px;
+    border-radius: 30px ;
+}
+
+.FiltroAvanzado1{
+
+
+
+    margin-left: 50px;
+}
+.MinimoPrecio{
+
+    display: flex;
+}
+
+.MaximoPrecio{
+
+
+    display:flex;
+}
+
+.MinimoTexto{
+
+     width: 100px;
+     height: 30px;
+     margin-left: 20px;
+     margin-top: 10px;
+     border: none;
+}
+
+.botonNotificacion:hover {
+    background-color: #FFF4E4; /* color solicitado */
+    cursor: pointer;
+    transform: scale(1.03);
+    width: 150px;
+    height: 40px;
+    border-radius: 15%;
+}
+
+nav2 h3 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+    cursor: pointer;
+}
+
+nav2 h3:hover {
+    background-color: #FFEBD4; 
+    transform: scale(1.05);   
+}
+
+.Cuadro1 {
+    width: 300px;
+    height: 180px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.botonReceta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextoBotonReceta {
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: #FFF4E4;
+
+    /* transición suave */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.TextoBotonReceta:hover {
+    background-color: #FFE0C0;
+    transform: scale(1.07);
+ }
+.MaximoTexto{
+
+
+
+    width:100px;
+    height:30px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: none;
+}
+
+.Caro{
+   margin-bottom: 10px;
+   margin-left: 50px;
+
+}
+.Regular{
+   margin-left: 50px;
+
+}
+.Barato{
+
+   margin-left: 50px;
+
+ }

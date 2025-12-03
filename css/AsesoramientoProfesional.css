@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7c09c;
+ 
+}
+
+/* ------- Top Bar ------- */
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #f2d3b0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.user-photo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.progress-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.notification-section {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 26px;
+}
+
+/* ------- Sidebar ------- */
+.sidebar {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 210px;
+    height: 100%;
+    background-color: #fae8c8;
+    padding-top: 10px;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    background-color: #f1d2aa;
+}
+
+/* ------- Contenido ------- */
+.content {
+    margin-left: 240px;
+    margin-top: 110px;
+    text-align: center;
+    width: calc(100% - 240px);
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.advisor-card {
+    background-color: #ffffffba;
+    padding: 15px;
+    border-radius: 12px;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.advisor-img {
+    width: 150px;
+}
+
+.advisor-label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.advisor-name {
+    background-color: #f3d6b7;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.message-box {
+    width: 70%;
+    height: 180px;
+    margin-top: 20px;
+    border-radius: 14px;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #fae8d5;
+}
+
+.btn-enviar {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #fff;
+    border-radius: 18px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+/* ===== MODAL ===== */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500; /* Encima de todo */
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-box {
+    background-color: #ffffff;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: aparecer 0.25s ease-out;
+}
+
+@keyframes aparecer {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-box h2 {
+    margin-top: 0;
+}
+
+.modal-box p {
+    margin: 10px 0 20px;
+}
+
+
+header {
+
+
+
+    background-color: #F3D3B4;
+    display:flex;
+    justify-content: center;
+
+}
+
+.TituloPagina{
+
+
+    font-size: 48px;
+}
+
+
+nav {
+
+    background-color: #FEE7D1;
+    display:flex;
+}
+
+
+nav2 {
+
+
+
+   background-color: #FFB68B;
+   display:flex;
+   position:sticky;
+   top:0;
+   z-index: 1000;
+}
+
+section {
+
+
+    background-color: #FFEACB;
+    overflow: hidden;
+    
+}
+
+footer {
+    
+    padding:10px;
+    background-color: #95674C;
+    margin:0;
+    height: 200px;
+    justify-content: center;
+}
+
+.ActividadReciente{
+
+
+    margin-left: 200px;
+    margin-right: 40px;
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.AdministracionTarea{
+
+
+
+    margin-left:800px;
+    
+    position:relative;
+}
+.ComidasRecomendadas{
+
+
+
+   margin-top:800px;
+   position:relative;
+   right:580px;
+
+}
+
+.InformacionComida{
+
+
+
+
+    margin-left:350px;
+    margin-right:80px;
+
+}
+
+
+
+
+.PlanificacionMeta{
+
+
+
+    margin-right:80px;
+}
+
+.Recomendaciones{
+
+
+    margin-right:80px;
+}
+
+.YendoMenu{
+
+    
+   width:150px;
+   height: 150px;
+   margin-right: 20px;
+
+}
+
+
+
+
+.NutriwebImagen{
+
+   width:150px;
+   height: 145px;
+
+}
+
+
+.botonNotificacion{
+
+
+   position: relative;
+
+   left:300px;
+   top:40px;
+}
+#panelNotificaciones {
+    position: absolute;
+    top: 100px; /* Ajusta según el alto de tu nav */
+    right: 20px;
+    width: 280px;
+    background: #47F4AC;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+.panel-hidden {
+    opacity: 0;
+    pointer-events: none; /* No permite click cuando está oculto */
+    transform: translateY(-10px);
+}
+
+.panel-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.botonNotificacion:hover {
+    background-color: #FFF4E4; /* color solicitado */
+    cursor: pointer;
+    transform: scale(1.03);
+    width: 150px;
+    height: 40px;
+    border-radius: 15%;
+}
