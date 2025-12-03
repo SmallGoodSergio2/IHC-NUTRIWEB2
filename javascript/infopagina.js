@@ -3,21 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnInfoComida = document.getElementById("btnInfoComida");
     if (btnInfoComida) {
         btnInfoComida.addEventListener("click", () => {
-            window.location.href = "/IHC-NUTRIWEB2/pages/informacionComida/subpaginasInformacion/registrarAlimentos.html";
+            window.location.href = "/IHC-NUTRIWEB2/pages/informacionComida/informacionDeComidas.html";
         });
     }
 
     const btnPlanMeta = document.getElementById("btnPlanMeta");
     if (btnPlanMeta) {
         btnPlanMeta.addEventListener("click", () => {
-            window.location.href = "/IHC-NUTRIWEB2/pages/planificarMeta/subpaginasInformacion/registrarAlimentos.html";
+            window.location.href = "/IHC-NUTRIWEB2/pages/planificarMeta/subpaginasplanificar/crearMetas.html";
         });
     }
 
     const btnRecomendaciones = document.getElementById("btnRecomendaciones");
     if (btnRecomendaciones) {
         btnRecomendaciones.addEventListener("click", () => {
-            window.location.href = "/IHC-NUTRIWEB2/pages/recomendar/recomendaciones.html";
+            window.location.href = "/IHC-NUTRIWEB2/pages/recomendar/recomendaciones2.html";
         });
     }
 
