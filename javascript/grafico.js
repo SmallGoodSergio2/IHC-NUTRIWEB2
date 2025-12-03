@@ -21,3 +21,42 @@ new Chart(ctx, {
         }
     }
 });
+
+// Navegación
+document.addEventListener("DOMContentLoaded", () => {
+    const btnInfoComida = document.getElementById("btnInfoComida");
+    const btnPlanMeta = document.getElementById("btnPlanMeta");
+    const btnRecomendaciones = document.getElementById("btnRecomendaciones");
+    const btnConfig = document.getElementById("btnConfig");
+    const btnMenu = document.getElementById("Menu");
+
+    if (btnInfoComida) {
+        btnInfoComida.addEventListener("click", () => {
+            window.location.href = "../../informacionComida/informacionDeComidas.html";
+        });
+    }
+
+    if (btnPlanMeta) {
+        btnPlanMeta.addEventListener("click", () => {
+            window.location.href = "../../planificarMeta/planificacionMeta.html";
+        });
+    }
+
+    if (btnRecomendaciones) {
+        btnRecomendaciones.addEventListener("click", () => {
+            window.location.href = "../../recomendar/recomendaciones.html";
+        });
+    }
+
+    if (btnConfig) {
+        btnConfig.addEventListener("click", () => {
+            window.location.href = "../configuracion.html";
+        });
+    }
+
+    if (btnMenu) {
+        btnMenu.addEventListener("click", () => {
+            window.location.href = "../../../index.html";
+        });
+    }
+});

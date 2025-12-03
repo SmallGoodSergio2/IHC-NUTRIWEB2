@@ -70,4 +70,25 @@ document.addEventListener("DOMContentLoaded", () => {
             showCategories();
         }
     });
+
+    // Navegación del sidebar
+    const menuItems = document.querySelectorAll(".menu-item");
+    menuItems.forEach(item => {
+        item.addEventListener("click", () => {
+            const text = item.textContent.trim();
+            if (text === "Buscar información de comida") {
+                window.location.href = "../informacionComida/informacionDeComidas.html";
+            } else if (text === "Planificar metas") {
+                window.location.href = "../planificarMeta/planificacionMeta.html";
+            } else if (text === "Recomendaciones") {
+                window.location.href = "recomendaciones.html";
+            } else if (text === "Atención al cliente") {
+                window.location.href = "../AsesoramientoProfesional.html";
+            } else if (text === "Configuración") {
+                window.location.href = "../configuracion/configuracion.html";
+            } else if (text === "Cerrar sesión") {
+                window.location.href = "../../index.html";
+            }
+        });
+    });
 });
