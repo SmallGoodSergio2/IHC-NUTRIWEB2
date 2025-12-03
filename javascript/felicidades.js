@@ -16,7 +16,7 @@ btnNuevoObjetivo.addEventListener("click", () => {
 
 // ➤ Volver al menú principal (index.html)
 btnVolverMenu.addEventListener("click", () => {
-    window.location.href = "../../index.html";
+    window.location.href = "../../../index.html";
 });
 
 

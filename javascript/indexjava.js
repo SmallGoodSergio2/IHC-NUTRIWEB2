@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("btnPlanMeta").addEventListener("click", () => {
-        window.location.href = "pages/planificarMeta/subpaginasplanificar/crearMetas.html";
+        window.location.href = "pages/planificarMeta/planificacionMeta.html";
     });
 
     document.getElementById("btnRecomendaciones").addEventListener("click", () => {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("btnConfig").addEventListener("click", () => {
-        window.location.href = "pages/configuracion.html";
+        window.location.href = "pages/configuracion/configuracion.html";
     });
 
 });

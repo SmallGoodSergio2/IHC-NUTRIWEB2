@@ -10,22 +10,42 @@ botonNoti.addEventListener("click", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Detectar en qué carpeta está el archivo actual
+    const path = window.location.pathname;
+    const isInConfiguracion = path.includes("/configuracion/");
+    const isInInformacionComida = path.includes("/informacionComida/");
 
     document.getElementById("btnInfoComida").addEventListener("click", () => {
-        window.location.href = "../../../pages/informacionComida/subpaginasInformacion/registrarAlimentos.html";
+        if (isInConfiguracion) {
+            window.location.href = "../../informacionComida/informacionDeComidas.html";
+        } else {
+            window.location.href = "../informacionDeComidas.html";
+        }
     });
 
     document.getElementById("btnPlanMeta").addEventListener("click", () => {
-        window.location.href = "../../../pages/planificarMeta/planificacionMeta.html";
+        window.location.href = "../../planificarMeta/planificacionMeta.html";
     });
 
     document.getElementById("btnRecomendaciones").addEventListener("click", () => {
-        window.location.href = "../../../pages/recomendar/recomendaciones2.html";
+        window.location.href = "../../recomendar/recomendaciones.html";
     });
 
     document.getElementById("btnConfig").addEventListener("click", () => {
-        window.location.href = "../../../pages/configuracion.html";
+        if (isInConfiguracion) {
+            window.location.href = "../configuracion.html";
+        } else {
+            window.location.href = "../../configuracion/configuracion.html";
+        }
     });
+
+    // Botón Menu para volver al index
+    const btnMenu = document.getElementById("Menu");
+    if (btnMenu) {
+        btnMenu.addEventListener("click", () => {
+            window.location.href = "../../../index.html";
+        });
+    }
 
 });
 
@@ -55,9 +75,6 @@ let alimentos = [
     grasas: 3.6,
     carbohidratos: 0
   },
-
-
-
   {
     nombre: "Avena",
     imagen : "../../../assets/images/Avena.jpg",
@@ -66,9 +83,6 @@ let alimentos = [
     grasas: 7,
     carbohidratos: 66
   },
-
-
-
 ];
 
 let buscador = document.getElementById("buscador");
@@ -92,7 +106,7 @@ function mostrarAlimentos(lista) {
 
       localStorage.setItem("alimentoSeleccionado", JSON.stringify(alimento));
 
-      window.location.href = "../../../pages/informacionComida/subpaginasInformacion/confirmarRegistro.html";
+      window.location.href = "confirmarRegistro.html";
     });
 
     card.appendChild(img);

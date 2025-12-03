@@ -25,3 +25,40 @@ botonRegistrar.addEventListener("click", () => {
 
     alert("Alimento registrado en el historial");
 });
+
+// Navegación principal
+const btnInfoComida = document.getElementById("btnInfoComida");
+const btnPlanMeta = document.getElementById("btnPlanMeta");
+const btnRecomendaciones = document.getElementById("btnRecomendaciones");
+const btnConfig = document.getElementById("btnConfig");
+const btnMenu = document.getElementById("Menu");
+
+if (btnInfoComida) {
+    btnInfoComida.addEventListener("click", () => {
+        window.location.href = "../informacionDeComidas.html";
+    });
+}
+
+if (btnPlanMeta) {
+    btnPlanMeta.addEventListener("click", () => {
+        window.location.href = "../../planificarMeta/planificacionMeta.html";
+    });
+}
+
+if (btnRecomendaciones) {
+    btnRecomendaciones.addEventListener("click", () => {
+        window.location.href = "../../recomendar/recomendaciones.html";
+    });
+}
+
+if (btnConfig) {
+    btnConfig.addEventListener("click", () => {
+        window.location.href = "../../configuracion/configuracion.html";
+    });
+}
+
+if (btnMenu) {
+    btnMenu.addEventListener("click", () => {
+        window.location.href = "../../../index.html";
+    });
+}

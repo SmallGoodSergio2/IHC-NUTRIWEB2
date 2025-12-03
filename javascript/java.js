@@ -8,20 +8,28 @@ let metasAlimentarias = JSON.parse(localStorage.getItem("MetasAlimentarias")) ||
 document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btnInfoComida").addEventListener("click", () => {
-        window.location.href = "../../../pages/informacionComida/subpaginasInformacion/registrarAlimentos.html";
+        window.location.href = "../../informacionComida/informacionDeComidas.html";
     });
 
     document.getElementById("btnPlanMeta").addEventListener("click", () => {
-        window.location.href = "../../../pages/planificarMeta/subpaginasplanificar/crearMetas.html";
+        window.location.href = "../planificacionMeta.html";
     });
 
     document.getElementById("btnRecomendaciones").addEventListener("click", () => {
-        window.location.href = "../../../pages/recomendar/recomendaciones.html";
+        window.location.href = "../../recomendar/recomendaciones.html";
     });
 
     document.getElementById("btnConfig").addEventListener("click", () => {
-        window.location.href = "../../../pages/configuracion.html";
+        window.location.href = "../../configuracion/configuracion.html";
     });
+
+    // Botón Menu para volver al index
+    const btnMenu = document.getElementById("Menu");
+    if (btnMenu) {
+        btnMenu.addEventListener("click", () => {
+            window.location.href = "../../../index.html";
+        });
+    }
 
 });
 

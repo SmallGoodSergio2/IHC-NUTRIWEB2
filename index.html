@@ -29,7 +29,6 @@
 
         <div class="nav-center">
             <a href="#" class="active">Inicio</a>
-            <!-- Estos IDs son los que usa indexjava.js -->
             <a href="javascript:void(0)" id="btnInfoComida">Información Comida</a>
             <a href="javascript:void(0)" id="btnPlanMeta">Planificación Meta Alimentaria</a>
             <a href="javascript:void(0)" id="btnRecomendaciones">Recomendaciones</a>
@@ -40,14 +39,12 @@
             <span class="idioma">ES</span>
             <button class="login-btn">Iniciar sesión</button>
 
-            <!-- Botón de notificaciones (mantiene el mismo ID) -->
             <button id="botonNotificacion" class="botonNotificacion">
                 Notificaciones
             </button>
         </div>
     </nav>
 
-    <!-- Panel de notificaciones (mismo HTML que antes, solo movido debajo del nav) -->
     <div id="panelNotificaciones" class="panel-hidden">
         <h3>Notificaciones</h3>
         <ul id="listaNotificaciones">
@@ -55,9 +52,7 @@
         </ul>
     </div>
 
-    <!-- ===== HERO (contenido principal como la imagen 1) ===== -->
     <main class="hero">
-        <!-- LADO IZQUIERDO: texto -->
         <section class="hero-text">
             <p class="tag">Bienvenido a Nutriweb</p>
 
@@ -88,32 +83,27 @@
             </p>
         </section>
 
-        <!-- LADO DERECHO: tarjeta con imagen y actividad de hoy -->
-<section class="hero-visual">
+        <section class="hero-visual">
+            <img src="assets/images/rec_economicas.jpg"
+                 alt="Comidas económicas"
+                 class="rotating-img active">
 
-    <!-- Imágenes en rotación con sus nombres EXACTOS -->
-    <img src="assets/images/rec_economicas.jpg" 
-         alt="Comidas económicas" 
-         class="rotating-img active">
+            <img src="assets/images/rec_presupuesto.jpg"
+                 alt="Comidas económicas presupuesto"
+                 class="rotating-img">
 
-    <img src="assets/images/rec_presupuesto.jpg" 
-         alt="Plato económico con presupuesto" 
-         class="rotating-img">
+            <img src="assets/images/rec_rapidas.jpg"
+                 alt="Recetas rápidas"
+                 class="rotating-img">
 
-    <img src="assets/images/rec_rapidas.jpg" 
-         alt="Recetas rápidas y saludables" 
-         class="rotating-img">
-
-    <div class="stat-card">
-        <p class="stat-label">Actividad de hoy</p>
-        <p class="stat-main">3 comidas registradas</p>
-        <p class="stat-sub">Meta diaria: 80% completada</p>
-    </div>
-</section>
-
+            <div class="stat-card">
+                <p class="stat-label">Actividad de hoy</p>
+                <p class="stat-main">3 comidas registradas</p>
+                <p class="stat-sub">Meta diaria: 80% completada</p>
+            </div>
+        </section>
     </main>
 
-    <!-- ===== FOOTER (con atención al cliente) ===== -->
     <footer>
         <div class="TextoFoot">
             <h3 class="TextoFooter">
@@ -130,3 +120,4 @@
 
 </body>
 </html>
+
