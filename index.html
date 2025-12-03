@@ -1,115 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NutriWeb - Inicio</title>
+
+    <!-- Estilos antiguos (para otras páginas / panel notificaciones) -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Estilos nuevos de la pantalla de inicio (diseño moderno) -->
+    <link rel="stylesheet" href="css/inicio.css">
+
+    <!-- JS de navegación + notificaciones -->
     <script src="javascript/indexjava.js" defer></script>
+    <!-- JS de la animación del carrusel e indicador de menú activo -->
+    <script src="javascript/inicio.js" defer></script>
 </head>
 <body>
-    
-<header>
 
-   <div class="TituloPagina">
+    <!-- ===== NAV SUPERIOR (diseño moderno) ===== -->
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="logo">NW</div>
+            <div class="nav-brand-text">
+                <div style="font-weight:700; font-size:14px;">NUTRIWEB</div>
+                <div style="font-size:11px;">Tu asistente para metas alimentarias</div>
+            </div>
+        </div>
 
-        <h2>NUTRIWEB</h2>
+        <div class="nav-center">
+            <a href="#" class="active">Inicio</a>
+            <!-- Estos IDs son los que usa indexjava.js -->
+            <a href="javascript:void(0)" id="btnInfoComida">Información Comida</a>
+            <a href="javascript:void(0)" id="btnPlanMeta">Planificación Meta Alimentaria</a>
+            <a href="javascript:void(0)" id="btnRecomendaciones">Recomendaciones</a>
+            <a href="javascript:void(0)" id="btnConfig">Configuración</a>
+        </div>
 
+        <div class="nav-right">
+            <span class="idioma">ES</span>
+            <button class="login-btn">Iniciar sesión</button>
 
-   </div>
-</header>
+            <!-- Botón de notificaciones (mantiene el mismo ID) -->
+            <button id="botonNotificacion" class="botonNotificacion">
+                Notificaciones
+            </button>
+        </div>
+    </nav>
 
-<nav>
-
-
-  <button id="Menu" class="YendoMenu"><img class="NutriwebImagen" src="assets/images/NUTRIWEBLOGO.png" alt="assets/images/NUTRIWEBLOGO.png"></button>
-   
-  <div class = "Nombre">
-
-    
-    <h2 class ="usuarioNombre">Nombre de usuario: Sergio Saavedra</h2>
-
-  </div>
-   
-
-  <div class ="Notificacion">
-
-
-        <h2 id ="botonNotificacion"class ="botonNotificacion">Notificaciones</h2>
-
-  </div>
-
-  <div id="panelNotificaciones" class="panel-hidden">
-    <h3>Notificaciones</h3>
-    <ul id="listaNotificaciones">
-        <li>No tienes nuevas notificaciones</li>
-    </ul>
-</div>
-
-</nav>
-
-
-<nav2>
-   
-   <h3 id="btnInfoComida" class="InformacionComida">Informacion Comida</h3>
-   <h3 id="btnPlanMeta" class="PlanificacionMeta">Planificacion Meta Alimentaria</h3>
-   <h3 id="btnRecomendaciones" class="Recomendaciones">Recomendaciones</h3>
-   <h3 id="btnConfig" class="Configuracion">Configuracion</h3>
-</nav2>
-
-
-<section>
-
-    <div class="introMeta">
-        <h2 class="introTitulo">Bienvenido a Nutriweb</h2>
-
-        <p class="introTexto">
-            En NutriWeb puedes crear, registrar y monitorear tus metas alimentarias para mejorar
-            tus hábitos de nutrición. Desde bajar o subir de peso, hasta mantener un estilo
-            de vida más saludable, aquí encontrarás herramientas diseñadas para ayudarte
-            a avanzar paso a paso.
-        </p>
-
-        <p class="introTexto">
-            Para comenzar, dirígete a la sección <strong>"Planificación Meta Alimentaria"</strong> donde podrás:
-        </p>
-
-        <ul class="introLista">
-            <li>📌 Crear metas personalizadas según tus objetivos.</li>
-            <li>📊 Registrar tu progreso de forma sencilla.</li>
-            <li>⏳ Establecer una duración estimada y una fecha de inicio.</li>
-            <li>📝 Añadir notas o recordatorios importantes.</li>
+    <!-- Panel de notificaciones (mismo HTML que antes, solo movido debajo del nav) -->
+    <div id="panelNotificaciones" class="panel-hidden">
+        <h3>Notificaciones</h3>
+        <ul id="listaNotificaciones">
+            <li>No tienes nuevas notificaciones</li>
         </ul>
-
-        <p class="introTexto">
-            ¡Tu camino hacia una mejor alimentación comienza aquí!
-        </p>
     </div>
 
+    <!-- ===== HERO (contenido principal como la imagen 1) ===== -->
+    <main class="hero">
+        <!-- LADO IZQUIERDO: texto -->
+        <section class="hero-text">
+            <p class="tag">Bienvenido a Nutriweb</p>
+
+            <h1 class="hero-title">
+                Tu camino hacia mejores hábitos comienza aquí
+            </h1>
+
+            <p class="hero-sub">
+                En NutriWeb puedes crear, registrar y monitorear tus metas alimentarias
+                para mejorar tus hábitos de nutrición. Desde bajar o subir de peso,
+                hasta mantener un estilo de vida más saludable, aquí encontrarás
+                herramientas diseñadas para ayudarte a avanzar paso a paso.
+            </p>
+
+            <ul class="hero-list">
+                <li>📌 Crear metas personalizadas según tus objetivos.</li>
+                <li>📊 Registrar tu progreso de forma sencilla.</li>
+                <li>⏳ Establecer una duración estimada y una fecha de inicio.</li>
+                <li>📝 Añadir notas o recordatorios importantes.</li>
+            </ul>
+
+            <button class="hero-btn-main" id="btnPlanMetaPrincipal">
+                Comenzar con mi plan
+            </button>
+
+            <p class="hero-sub" style="margin-top:8px; font-size:13px;">
+                Sin publicidad invasiva. Solo tú y tus hábitos saludables.
+            </p>
+        </section>
+
+        <!-- LADO DERECHO: tarjeta con imagen y actividad de hoy -->
+<section class="hero-visual">
+
+    <!-- Imágenes en rotación con sus nombres EXACTOS -->
+    <img src="assets/images/rec_economicas.jpg" 
+         alt="Comidas económicas" 
+         class="rotating-img active">
+
+    <img src="assets/images/rec_presupuesto.jpg" 
+         alt="Plato económico con presupuesto" 
+         class="rotating-img">
+
+    <img src="assets/images/rec_rapidas.jpg" 
+         alt="Recetas rápidas y saludables" 
+         class="rotating-img">
+
+    <div class="stat-card">
+        <p class="stat-label">Actividad de hoy</p>
+        <p class="stat-main">3 comidas registradas</p>
+        <p class="stat-sub">Meta diaria: 80% completada</p>
+    </div>
 </section>
 
+    </main>
 
+    <!-- ===== FOOTER (con atención al cliente) ===== -->
+    <footer>
+        <div class="TextoFoot">
+            <h3 class="TextoFooter">
+                Si tiene alguna duda sobre la página no dude en contactarnos
+            </h3>
+        </div>
 
-<footer>
-
-  <p>. </p>
-  
-  <div class="TextoFoot">
-     <h3 class ="TextoFooter">Si tiene alguna duda sobre la página no dude en contactarnos</h3>
-
-  </div>   
-     
-  <div class ="LinkAsistente">
-
-
-    <h3 class="AtencionCliente" id="btnAsistente">
-         Atencion al cliente
-    </h3>
-  </div>
-
-</footer>
-
-
+        <div class="LinkAsistente">
+            <h3 class="AtencionCliente" id="btnAsistente">
+                Atención al cliente
+            </h3>
+        </div>
+    </footer>
 
 </body>
 </html>
